@@ -1,7 +1,11 @@
+/* CSS Created By Levianth  */
+/* Github : https://github.com/LevianthProject */
+/* This CSS still under maintenance and please do not change any class or property for now. */
+/* Any question for this css please contact me on : Email levianthproject@gmail.com or Discord : Levianthz#7761 */
+
 body .font-poppins {
     font-family: 'Poppins', sans-serif !important;
 }
-
 
 body .icon-menu {
     width: 26%;
@@ -84,12 +88,6 @@ body .font-size-6 {
     background-image: url("image/bg-bubble.svg");
 }
 
-.img-places {
-    display: flex;
-    height: 200px;
-    width: 250px;
-}
-
 .z-10 {
     z-index: 100;
 }
@@ -100,6 +98,10 @@ body .font-size-6 {
 
 .w-40 {
     width: 35%;
+}
+
+.w-90 {
+    width: 90%;
 }
 
 .px-6 {
@@ -139,122 +141,294 @@ body .font-size-6 {
 }
 
 
+/* Responsive */
 
-/* gallery */
+@media screen and (max-width: 460px) {
 
-body .gallery-wrapper {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 80vh;
-    background-image: url("image/bg-bubble-2.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80%;
+    .w-sm-75 {
+        width: 50% !important;
+    }
+
+    .w-sm-80 {
+        width: 70% !important;
+    }
+
+    .img-places {
+        display: flex;
+        z-index: 100;
+        height: 20% !important;
+        width: 20% !important;
+    }
+
+
 }
 
-body .gallery-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 10px;
-    font-family: 'DM Sans', sans-serif;
-    transition: background 0.4s ease-in;
+@media screen and (max-width: 990px) {
+
+    .font-size-sm-1 {
+        font-size: 25px !important;
+    }
+
+    .img-places {
+        display: flex;
+        height: 25%;
+        width: 25%;
+    }
+
+
+    .maps-responsive {
+        width: 100%;
+        height: 20%;
+    }
+
+    body .gallery-wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 80vh;
+        background-image: url("image/bg-bubble-2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+    }
+
+    body .gallery-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        font-family: 'DM Sans', sans-serif;
+        transition: background 0.4s ease-in;
+    }
+
+
+    .gallery-paginate {
+        background-color: #ABB5D1;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        z-index: 100;
+    }
+
+    .gallery-wrapper input[type=radio] {
+        appearance: auto;
+        position: relative;
+        top: 280px;
+        left: -350px;
+        margin: 10px;
+        z-index: 500;
+        background-color: burlywood;
+    }
+
+    .container-gallery label {
+        display: inline-block;
+    }
+
+    .card-gallery {
+        position: fixed;
+        width: 100%;
+        height: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .container-gallery {
+        width: 100%;
+        max-width: 800px;
+        max-height: 600px;
+        height: 100%;
+        transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cards-gallery {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-gallery .cards-gallery img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+    #gallerys-1:checked~.cards-gallery #images-3,
+    #gallerys-2:checked~.cards-gallery #images-1,
+    #gallerys-3:checked~.cards-gallery #images-2 {
+        /* transform: translatex(-40%) scale(0.8);
+        background-color: rgba(0, 0, 0, 0.100);
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+        opacity: 0.4; */
+        z-index: 0;
+    }
+
+    #gallerys-1:checked~.cards-gallery #images-2,
+    #gallerys-2:checked~.cards-gallery #images-3,
+    #gallerys-3:checked~.cards-gallery #images-1 {
+        /* transform: translatex(40%) scale(0.8);
+        background-color: rgba(0, 0, 0, 0.100);
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+        opacity: 0.4; */
+        z-index: 0;
+    }
+
+    #gallerys-1:checked~.cards-gallery #images-1,
+    #gallerys-2:checked~.cards-gallery #images-2,
+    #gallerys-3:checked~.cards-gallery #images-3 {
+        transform: translatex(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #gallerys-1:checked~.cards-gallery #images-1 img,
+    #gallerys-2:checked~.cards-gallery #images-2 img,
+    #gallerys-3:checked~.cards-gallery #images-3 img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+
+
 }
 
+@media only screen and (min-width: 992px) {
 
-.gallery-paginate {
-    background-color: #ABB5D1;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    z-index: 100;
-}
 
-.gallery-wrapper input[type=radio] {
-    appearance: auto;
-    position: relative;
-    top: 280px;
-    left: -350px;
-    margin: 10px;
-    z-index: 500;
-    background-color: burlywood;
-}
+    .img-places {
+        display: flex;
+        height: 200px;
+        width: 250px;
+    }
 
-.container-gallery label {
-    display: inline-block;
-}
 
-.card-gallery {
-    position: fixed;
-    width: 724px;
-    height: 455px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: transform 0.4s ease;
-    cursor: pointer;
-    background-color: #fff;
-    border-radius: 10px;
-}
+    /* gallery */
 
-.container-gallery {
-    width: 100%;
-    max-width: 800px;
-    max-height: 600px;
-    height: 100%;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    text-align: center;
-    align-items: center;
-}
+    body .gallery-wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 80vh;
+        background-image: url("image/bg-bubble-2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+    }
 
-.cards-gallery {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+    body .gallery-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        font-family: 'DM Sans', sans-serif;
+        transition: background 0.4s ease-in;
+    }
 
-.container-gallery .cards-gallery img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    padding: 10px;
-}
 
-#gallerys-1:checked~.cards-gallery #images-3,
-#gallerys-2:checked~.cards-gallery #images-1,
-#gallerys-3:checked~.cards-gallery #images-2 {
-    transform: translatex(-40%) scale(0.8);
-    background-color: rgba(0, 0, 0, 0.100);
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-    opacity: 0.4;
-    z-index: 0;
-}
+    .gallery-paginate {
+        background-color: #ABB5D1;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        z-index: 100;
+    }
 
-#gallerys-1:checked~.cards-gallery #images-2,
-#gallerys-2:checked~.cards-gallery #images-3,
-#gallerys-3:checked~.cards-gallery #images-1 {
-    transform: translatex(40%) scale(0.8);
-    background-color: rgba(0, 0, 0, 0.100);
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-    opacity: 0.4;
-    z-index: 0;
-}
+    .gallery-wrapper input[type=radio] {
+        appearance: auto;
+        position: relative;
+        top: 280px;
+        left: -350px;
+        margin: 10px;
+        z-index: 500;
+        background-color: burlywood;
+    }
 
-#gallerys-1:checked~.cards-gallery #images-1,
-#gallerys-2:checked~.cards-gallery #images-2,
-#gallerys-3:checked~.cards-gallery #images-3 {
-    transform: translatex(0) scale(1);
-    opacity: 1;
-    z-index: 1;
-}
+    .container-gallery label {
+        display: inline-block;
+    }
 
-#gallerys-1:checked~.cards-gallery #images-1 img,
-#gallerys-2:checked~.cards-gallery #images-2 img,
-#gallerys-3:checked~.cards-gallery #images-3 img {
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    .card-gallery {
+        position: fixed;
+        width: 724px;
+        height: 455px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .container-gallery {
+        width: 100%;
+        max-width: 800px;
+        max-height: 600px;
+        height: 100%;
+        transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cards-gallery {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-gallery .cards-gallery img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+    #gallerys-1:checked~.cards-gallery #images-3,
+    #gallerys-2:checked~.cards-gallery #images-1,
+    #gallerys-3:checked~.cards-gallery #images-2 {
+        transform: translatex(-40%) scale(0.8);
+        background-color: rgba(0, 0, 0, 0.100);
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    #gallerys-1:checked~.cards-gallery #images-2,
+    #gallerys-2:checked~.cards-gallery #images-3,
+    #gallerys-3:checked~.cards-gallery #images-1 {
+        transform: translatex(40%) scale(0.8);
+        background-color: rgba(0, 0, 0, 0.100);
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    #gallerys-1:checked~.cards-gallery #images-1,
+    #gallerys-2:checked~.cards-gallery #images-2,
+    #gallerys-3:checked~.cards-gallery #images-3 {
+        transform: translatex(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #gallerys-1:checked~.cards-gallery #images-1 img,
+    #gallerys-2:checked~.cards-gallery #images-2 img,
+    #gallerys-3:checked~.cards-gallery #images-3 img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+
+
 }
