@@ -19,7 +19,7 @@
 
 <body>
     <!-- Main Navbar -->
-    <nav class="navbar shadow font-poppins navbar-dark bg-1 px-lg-5 position-relative">
+    <nav class="navbar-expand-sm shadow font-poppins navbar-dark bg-1 px-lg-5 position-relative">
         <div class="container-fluid ">
             <div class="position-relative container-fluid d-flex justify-content-center">
                 <a class="navbar-brand" href="#">
@@ -32,9 +32,9 @@
                     <i class="fab fa-lg fa-twitter"></i>
                 </a>
             </div>
-            <div class="position-absolute d-md-block d-none pr-3" style="right: 3%;">
-                <button class="btn px-5 bg-3 text-white ml-3 shadow-none rounded-pill" type="button">
-                    <svg width="23" class="" height="32" viewBox="0 0 117 155" fill="currentColor"
+            <div class="position-absolute top-0 pt-1 d-lg-block d-none pr-3" style="right: 3%;">
+                <button class="btn px-4 bg-3 btn-sm py-1 text-white ml-3 shadow-none rounded-pill" type="button">
+                    <svg width="15" class="" height="23" viewBox="0 0 117 155" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M76.4501 37.5899C76.4474 42.5053 75.4767 47.372 73.5932 51.9122C71.7097 56.4524 68.9505 60.5772 65.4729 64.0511C61.9953 67.5249 57.8677 70.2798 53.3254 72.1584C48.7832 74.037 43.9154 75.0025 39.0001 74.9999C34.0838 75.0012 29.2155 74.034 24.6732 72.1536C20.1308 70.2732 16.0034 67.5163 12.5266 64.0405C9.04986 60.5646 6.29188 56.4379 4.41022 51.8961C2.52856 47.3542 1.56006 42.4861 1.56006 37.5699C1.56536 27.6446 5.51256 18.1278 12.5336 11.1123C19.5547 4.09686 29.0747 0.157264 39.0001 0.159917C43.9171 0.15729 48.7865 1.1235 53.33 3.00336C57.8735 4.88322 62.0022 7.63986 65.48 11.1158C68.9578 14.5918 71.7167 18.7189 73.5989 23.2614C75.4812 27.804 76.4501 32.6728 76.4501 37.5899V37.5899Z"
@@ -54,36 +54,37 @@
     <!-- End:Main Navbar -->
 
     <!-- Menu Mobile -->
-    <nav class="navbar d-lg-none d-block mb-3 rounded-pill fixed-bottom navbar-light w-100 py-1 bg-light">
+    <nav id="mob-nav"
+        class="navbar d-lg-none d-block mb-5 rounded-pill fixed-bottom navbar-light mx-auto w-max-95 py-1 bg-light">
         <div class="d-flex flex-row justify-content-center px-1">
             <li class="d-flex align-items-center justify-content-center ">
-                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#">
-                    <img class="w-50 w-sm-75" src="assets/icon/IconAbout.svg" alt="">
+                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#aboutUs">
+                    <img class="w-50 w-sm-50" src="assets/icon/IconAbout.svg" alt="">
                 </a>
             </li>
             <li class="d-flex align-items-center justify-content-center border-start">
-                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#">
-                    <img class="w-50 w-sm-75" src="assets/icon/IconNewsFlash.svg" alt="">
+                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#newsFlashIds">
+                    <img class="w-50 w-sm-50" src="assets/icon/IconNewsFlash.svg" alt="">
                 </a>
             </li>
             <li class="d-flex align-items-center justify-content-center border-start px-1">
-                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#">
-                    <img class="w-50 w-sm-75" src="assets/icon/IconKeunggulan2.png" alt="">
+                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#keunggulanIds">
+                    <img class="w-50 w-sm-50" src="assets/icon/IconKeunggulan2.png" alt="">
+                </a>
+            </li>
+            <li class="d-flex align-items-center justify-content-center border-start">
+                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#galleryIds">
+                    <img class="w-50 w-sm-50" src="assets/icon/IconImaged.svg" alt="">
                 </a>
             </li>
             <li class="d-flex align-items-center justify-content-center border-start">
                 <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#">
-                    <img class="w-50 w-sm-75" src="assets/icon/IconImaged.svg" alt="">
+                    <img class="w-50 w-sm-50" src="assets/icon/IconKalender1.svg" alt="">
                 </a>
             </li>
             <li class="d-flex align-items-center justify-content-center border-start">
                 <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#">
-                    <img class="w-50 w-sm-75" src="assets/icon/IconKalender1.svg" alt="">
-                </a>
-            </li>
-            <li class="d-flex align-items-center justify-content-center border-start">
-                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#">
-                    <img class="w-50 w-sm-75" src="assets/icon/IconPPDB1.svg" alt="">
+                    <img class="w-50 w-sm-50" src="assets/icon/IconPPDB1.svg" alt="">
                 </a>
             </li>
         </div>
@@ -95,28 +96,46 @@
     <div class="container-fluid mb-lg-5 px-0 ">
         <div class="container-fluid JumboImg d-flex flex-column justify-content-center mt-n1">
             <div class="d-flex flex-column">
-                <div class="d-flex flex-row justify-content-center pt-lg-0 pt-3">
-                    <div class="img-places pt-lg-3 justify-content-start me-lg-5">
+                <div class="d-flex flex-row justify-content-lg-evenly justify-content-between pt-lg-0 pt-3">
+                    <div class="img-places pt-lg-4 mt-lg-2 align-items-center justify-content-start me-lg-5">
                         <img class="w-100 h-100" src="assets/image/logo_EDNA.png" alt="">
                         <!-- <img class="mt-4 pe-5 me-5" width="224" height="145" src="assets/image/logo_EDNA.png" alt=""> -->
                     </div>
-                    <h1
-                        class="font-poppins mt-lg-5 mt-4 pt-lg-5 pt-4 text-white font-size-1 font-size-sm-1 text-center">
-                        Sistem
-                        Informasi Sekolah</h1>
+                    <div class="d-flex flex-column justify-content-center">
+                        <h1 class="font-poppins mt-lg-5 pt-lg-5  text-white font-size-1 font-size-sm-4 text-center">
+                            Sistem
+                            Informasi Sekolah</h1>
+                        <button
+                            class="btn d-lg-none mx-auto d-block w-75 bg-3 btn-sm py-1 mt-2 text-white shadow-none rounded-pill"
+                            type="button">
+                            <svg width="15" class="" height="23" viewBox="0 0 117 155" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M76.4501 37.5899C76.4474 42.5053 75.4767 47.372 73.5932 51.9122C71.7097 56.4524 68.9505 60.5772 65.4729 64.0511C61.9953 67.5249 57.8677 70.2798 53.3254 72.1584C48.7832 74.037 43.9154 75.0025 39.0001 74.9999C34.0838 75.0012 29.2155 74.034 24.6732 72.1536C20.1308 70.2732 16.0034 67.5163 12.5266 64.0405C9.04986 60.5646 6.29188 56.4379 4.41022 51.8961C2.52856 47.3542 1.56006 42.4861 1.56006 37.5699C1.56536 27.6446 5.51256 18.1278 12.5336 11.1123C19.5547 4.09686 29.0747 0.157264 39.0001 0.159917C43.9171 0.15729 48.7865 1.1235 53.33 3.00336C57.8735 4.88322 62.0022 7.63986 65.48 11.1158C68.9578 14.5918 71.7167 18.7189 73.5989 23.2614C75.4812 27.804 76.4501 32.6728 76.4501 37.5899V37.5899Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M27.83 111C27.1925 110.541 26.7173 109.891 26.4729 109.144C26.2285 108.398 26.2274 107.593 26.4698 106.845C26.7123 106.098 27.1857 105.447 27.8219 104.986C28.4581 104.525 29.2243 104.278 30.0099 104.28H62.2399C63.0245 104.28 63.7888 104.031 64.423 103.569C65.0573 103.108 65.5289 102.457 65.77 101.71L69.4199 90.48C65.8479 85.8099 61.2466 82.0269 55.9739 79.4253C50.7013 76.8236 44.8995 75.4735 39.02 75.48C28.8595 75.48 19.1152 79.5162 11.9307 86.7007C4.74615 93.8853 0.709961 103.63 0.709961 113.79V125.07H47.1599L27.83 111Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M86.1099 93.0501L92.3299 112.19C92.4803 112.658 92.7753 113.066 93.1725 113.355C93.5697 113.645 94.0485 113.8 94.5399 113.8H114.67C115.158 113.806 115.631 113.966 116.023 114.257C116.415 114.548 116.705 114.954 116.853 115.42C117 115.885 116.997 116.384 116.844 116.848C116.691 117.311 116.395 117.714 116 118L99.7099 129.83C99.314 130.12 99.0196 130.527 98.8688 130.994C98.718 131.461 98.7184 131.963 98.8699 132.43L105.09 151.58C105.24 152.046 105.239 152.547 105.087 153.012C104.935 153.477 104.64 153.882 104.244 154.17C103.848 154.457 103.371 154.612 102.882 154.612C102.393 154.612 101.916 154.457 101.52 154.17L85.2299 142.34C84.8327 142.053 84.355 141.898 83.8649 141.898C83.3748 141.898 82.8971 142.053 82.4999 142.34L66.2099 154.17C65.8138 154.457 65.337 154.612 64.8478 154.612C64.3585 154.612 63.8817 154.457 63.4856 154.17C63.0896 153.882 62.7946 153.477 62.6427 153.012C62.4908 152.547 62.4898 152.046 62.6399 151.58L68.8599 132.43C69.012 131.963 69.0116 131.459 68.8589 130.992C68.7061 130.524 68.4088 130.118 68.0099 129.83L51.7699 118C51.3725 117.713 51.0764 117.307 50.924 116.841C50.7717 116.374 50.7711 115.872 50.9222 115.405C51.0732 114.939 51.3683 114.532 51.765 114.244C52.1617 113.955 52.6395 113.8 53.1299 113.8H73.2599C73.7513 113.8 74.2301 113.645 74.6273 113.355C75.0245 113.066 75.3195 112.658 75.4699 112.19L81.6899 93.0501C81.8396 92.5815 82.1343 92.1726 82.5316 91.8825C82.9288 91.5924 83.408 91.436 83.8999 91.436C84.3919 91.436 84.871 91.5924 85.2682 91.8825C85.6655 92.1726 85.9602 92.5815 86.1099 93.0501V93.0501Z"
+                                    fill="currentColor" />
+                            </svg>
+                            Log In
+                        </button>
+                    </div>
                     <div class="img-places pt-lg-3 justify-content-end ms-lg-5">
                         <img class="w-100 h-100" src="assets/image/logo_tut.png" alt="">
                         <!-- <img class="mt-2 ps-5 ms-5" src="assets/image/logo_tut.png" alt=""> -->
                     </div>
                 </div>
                 <!-- Menu -->
-                <div class="px-6 mt-5">
+                <div class="px-lg-7 mt-lg-5">
                     <nav
-                        class="navbar d-lg-block d-none shadow d-flex mb-3 justify-content-center rounded-pill navbar-light bg-2 container-lg">
-                        <div class="w-100 d-flex flex-row justify-content-evenly px-5">
+                        class="navbar d-lg-block d-none shadow d-flex mb-3 justify-content-center rounded-pill navbar-light bg-2 container-md">
+                        <div class="w-100 d-flex flex-row justify-content-center px-1">
                             <li class="d-flex align-items-center flex-row justify-content-center">
-                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-3 px-0 mx-0"
-                                    href="#">
+                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-2 px-0 ms-2 me-0"
+                                    href="#aboutUs">
                                     <svg class="me-2" width="18%" viewBox="0 0 108 71" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -127,8 +146,8 @@
                                 </a>
                             </li>
                             <li class="d-flex align-items-center flex-row justify-content-center border-start">
-                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-3 px-0 mx-0"
-                                    href="#">
+                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-2 px-0 mx-0"
+                                    href="#newsFlashIds">
                                     <svg class="me-2" width="25%" viewBox="0 0 128 82" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -142,8 +161,8 @@
                                 </a>
                             </li>
                             <li class="d-flex align-items-center flex-row justify-content-center border-start">
-                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-3 px-0 mx-0"
-                                    href="#">
+                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-2 px-0 mx-0"
+                                    href="#keunggulanIds">
                                     <svg class="me-2" width="15%" viewBox="0 0 117 155" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -162,8 +181,8 @@
                                 </a>
                             </li>
                             <li class="d-flex align-items-center flex-row justify-content-center border-start">
-                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-3 px-0 mx-0"
-                                    href="#">
+                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-2 px-0 mx-0"
+                                    href="#galleryIds">
                                     <svg class="me-2" width="23%" viewBox="0 0 109 72" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -174,7 +193,7 @@
                                 </a>
                             </li>
                             <li class="d-flex align-items-center flex-row justify-content-center border-start">
-                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-3 px-0 mx-0"
+                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-2 px-0 mx-0"
                                     href="#">
                                     <svg class="me-2" width="20%" viewBox="0 0 139 155" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -207,7 +226,7 @@
                                 </a>
                             </li>
                             <li class="d-flex align-items-center flex-row justify-content-center border-start">
-                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-3 px-0 mx-0 "
+                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-2 px-0 ms-3 me-0 "
                                     href="#">
                                     <svg class="me-2" width="26%" viewBox="0 0 156 76" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -226,8 +245,12 @@
                 </div>
                 <!-- End:Menu -->
             </div>
-            <div class="container-fluid d-flex justify-content-center mt-lg-5 position-relative">
-                <img class=" w-40 w-sm-80 " src="assets/image/peopleBrand-2.svg" alt="">
+            <div
+                class="container-fluid d-flex justify-content-center flex-column align-items-center mt-lg-5 position-relative">
+                <img class=" w-40 w-sm-70 d-lg-block d-none" src="assets/image/peopleBrand-2.svg" alt="">
+                <img class="mb-3 w-40 w-sm-40 d-lg-none d-block" src="assets/image/peopleBrand-des-mobile.svg" alt="">
+                <img class="ms-5 ps-3 w-40 w-sm-50 d-lg-none d-block" src="assets/image/peopleBrand-ppl-mobile.svg"
+                    alt="">
             </div>
         </div>
     </div>
@@ -235,11 +258,12 @@
 
 
     <!-- Tentang Kami -->
-    <div class="container-fluid py-lg-5 position-relative">
+    <div id="aboutUs" class="container-fluid py-lg-5 position-relative mt-4 mt-lg-0">
         <div class="d-flex text-center flex-column">
-            <h1 class="font-poppins font-size-2 color-1 fw-bolder">Tentang Kami</h1>
+            <h1 class="font-poppins font-size-2 color-1 fw-bolder font-size-sm-3">Tentang Kami</h1>
             <div class="container-lg">
-                <p class="fw-lighter font-size-3 font-poppins color-2 pt-3 px-lg-5">Lorem ipsum dolor, sit amet
+                <p class="fw-lighter font-size-3 font-poppins font-size-sm-2 color-2 pt-3 px-lg-5">Lorem ipsum dolor,
+                    sit amet
                     consectetur
                     adipisicing
                     elit. Architecto veniam suscipit obcaecati aliquam, recusandae repellendus illo labore sapiente,
@@ -248,12 +272,7 @@
                     exercitationem reprehenderit rerum provident nobis! Ullam obcaecati ex sed soluta nemo nisi
                     accusantium
                     maxime rerum voluptatem? Tenetur eum, consequatur porro doloribus ipsam praesentium magni qui nihil
-                    ex
-                    quos aspernatur ut facere a. Aperiam esse excepturi accusamus nemo dolore quae atque eveniet ea est
-                    dicta aspernatur qui voluptas laborum quaerat corrupti quisquam quis sint illum provident, dolorem
-                    nesciunt. Numquam, dolores commodi enim deserunt cupiditate facere consequatur distinctio hic
-                    corporis
-                    nihil.</p>
+                    ex</p>
             </div>
         </div>
     </div>
@@ -261,49 +280,50 @@
 
 
     <!-- Keunggulan -->
-    <div class="container-fluid position-relative my-lg-5 py-lg-5 bg-unggul-main">
-        <h1 class="font-poppins font-size-2 color-1 fw-bolder text-center">Keunggulan</h1>
+    <div id="keunggulanIds" class="container-fluid position-relative my-lg-5 py-lg-5 mt-5 bg-unggul-main">
+        <h1 class="font-poppins font-size-2 color-1 fw-bolder font-size-sm-3 text-center">Keunggulan
+        </h1>
         <div class="d-flex flex-lg-row flex-column justify-content-center">
-            <div class="">
+            <div class="d-flex justify-content-center mt-5 mt-lg-0 bg-unggul-cards-2">
                 <div class="card bg-transparent card-width text-center border-0">
                     <img src="assets/image/imageUnggul-1.jpg" class="w-50 mx-auto" alt="...">
                     <div class="card-body fw-lighter">
-                        <h5 class="card-title color-3">Alumni Kompeten</h5>
-                        <p class="card-text color-2">Mencetak alumni
+                        <h5 class="card-title color-3 my-2 my-lg-0">Alumni Kompeten</h5>
+                        <p class="card-text color-2 font-size-sm-4">Mencetak alumni
                             dengan kemampuan
                             dan kualitas tinggi</p>
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="d-flex justify-content-center mt-4 mt-lg-0 bg-unggul-cards-1">
                 <div class="card bg-transparent card-width pt-lg-5 mt-lg-5 text-center border-0">
                     <img src="assets/image/imageUnggul-1.jpg" class="w-50 mx-auto" alt="...">
                     <div class="card-body fw-lighter">
-                        <h5 class="card-title color-3">Wawasan Global</h5>
-                        <p class="card-text color-2">Membekali
+                        <h5 class="card-title color-3 my-2 my-lg-0">Wawasan Global</h5>
+                        <p class="card-text color-2 font-size-sm-4">Membekali
                             para santri dengan
                             wawasan global</p>
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="d-flex justify-content-center mt-4 mt-lg-0 bg-unggul-cards-2">
                 <div class="card bg-transparent card-width pt-lg-5 mt-lg-5 text-center border-0">
                     <img src="assets/image/imageUnggul-1.jpg" class="w-50 mx-auto" alt="...">
                     <div class="card-body fw-lighter">
-                        <h5 class="card-title color-3">Pengajar Terbaik</h5>
-                        <p class="card-text color-2">Mehadirkan
+                        <h5 class="card-title color-3 my-2 my-lg-0">Pengajar Terbaik</h5>
+                        <p class="card-text color-2 font-size-sm-4">Mehadirkan
                             tenaga pengajar
                             yang terbaik
                             dibidangnya</p>
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="d-flex justify-content-center mt-4 mt-lg-0 bg-unggul-cards-1">
                 <div class="card bg-transparent card-width text-center border-0">
                     <img src="assets/image/imageUnggul-1.jpg" class="w-50 mx-auto" alt="...">
                     <div class="card-body fw-lighter">
-                        <h5 class="card-title color-3">Fasilitas Lengkap</h5>
-                        <p class="card-text color-2">Menyediakan
+                        <h5 class="card-title color-3 my-2 my-lg-0">Fasilitas Lengkap</h5>
+                        <p class="card-text color-2 font-size-sm-4">Menyediakan
                             fasilitas yang lengkap
                             untuk menunjang
                             pembelajaran</p>
@@ -316,15 +336,15 @@
 
 
     <!-- Gallery -->
-    <div class="container-fluid py-5">
-        <h1 class="font-poppins font-size-2 color-1 fw-bolder text-center">Gallery</h1>
+    <div id="galleryIds" class="container-fluid py-lg-5 pt-5">
+        <h1 class="font-poppins font-size-2 color-1 fw-bolder font-size-sm-3 text-center">Gallery</h1>
         <div class="gallery-wrapper py-lg-5 my-lg-5 flex-column d-flex">
             <div class="container-gallery ">
                 <input type="radio" class="" name=" slider-gallery" id="gallerys-1" checked>
                 <input type="radio" class="" name=" slider-gallery" id="gallerys-2">
                 <input type="radio" class="" name=" slider-gallery" id="gallerys-3">
-                <div class="" style="position: absolute; z-index: 1000; top: -40px; right: 75px;">
-                    <img width="80px" src="assets/icon/gallery_topIcon.svg" alt="">
+                <div class="icon-gallerys">
+                    <img class="icon-width-gallery" width="80px" src="assets/icon/gallery_topIcon.svg" alt="">
                 </div>
                 <div class="cards-gallery">
                     <label class="card-gallery" for="gallerys-1" id="images-1">
@@ -347,10 +367,10 @@
 
 
     <!-- News Flash -->
-    <div class="container-fluid position-relative z-10 my-lg-5 py-lg-5 bg-unggul-main">
-        <h1 class="font-poppins font-size-2 color-1 fw-bolder text-center">News Flash</h1>
-        <div class="d-flex flex-lg-row flex-column justify-content-center">
-            <div class="px-lg-3">
+    <div id="newsFlashIds" class="container-fluid position-relative z-10 my-lg-5 py-lg-5 bg-unggul-main">
+        <h1 class="font-poppins font-size-2 color-1 fw-bolder font-size-sm-3 text-center">News Flash</h1>
+        <div class="d-flex flex-lg-row flex-column justify-content-center mt-4 mt-lg-0">
+            <div class="d-flex justify-content-center px-lg-3">
                 <div class="card bg-white rounded-3 shadow-lg card-style-1 p-2 text-start border-0">
                     <img src="assets/image/newsImage.jpg" class="w-100 rounded-3 mx-auto" alt="...">
                     <div class="card-body px-1 fw-lighter position-relative">
@@ -366,7 +386,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-lg-3 mt-lg-5">
+            <div class="d-flex justify-content-center px-lg-3 mt-lg-5 mb-lg-0 my-4">
                 <div class="card bg-white mt-lg-3 rounded-3 shadow-lg card-style-1 p-2 text-start border-0">
                     <img src="assets/image/newsImage.jpg" class="w-100 rounded-3 mx-auto" alt="...">
                     <div class="card-body px-1 fw-lighter position-relative">
@@ -382,7 +402,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-lg-3">
+            <div class="d-flex justify-content-center px-lg-3">
                 <div class="card bg-white rounded-3 shadow-lg card-style-1 p-2 text-start border-0">
                     <img src="assets/image/newsImage.jpg" class="w-100 rounded-3 mx-auto" alt="...">
                     <div class="card-body px-1 fw-lighter position-relative">
@@ -406,7 +426,7 @@
     <!-- Maps -->
     <div class="container-fluid py-lg-5 py-3 mt-lg-0 mt-5 mb-lg-0 mb-3">
         <div class="row flex-column flex-lg-row">
-            <div class="col d-flex justify-content-center">
+            <div class="col py-4 py-lg-0 d-flex justify-content-center">
                 <img src="assets/image/DotMaps.svg" width="75%" alt="">
             </div>
             <div class="col">
@@ -421,13 +441,15 @@
 
 
     <!-- Footer -->
-    <footer class="container-fluid mt-lg-3 px-lg-5">
+    <footer class="container-fluid mt-lg-3 px-lg-5 py-lg-0 py-2">
         <div class="hr-styled"></div>
-        <div class="row py-lg-3 px-lg-5 align-items-center">
+        <div class="row flex-column flex-lg-row py-lg-3 px-lg-5 align-items-center py-lg-0 pt-4 pb-5 my-3 mb-lg-0">
             <div class="col">
-                <h3 class="font-size-6 fw-lighter ">© Copyrights 2021 SMP All rights reserved</h3>
+                <h3 class="font-size-6 font-size-sm-5 fw-lighter text-lg-start text-center">© Copyrights 2021 SMP All
+                    rights reserved
+                </h3>
             </div>
-            <div class="col d-flex align-items-center justify-content-end">
+            <div class="col py-lg-0 py-4 d-flex align-items-center justify-content-lg-end justify-content-center">
                 <a class="mx-3" href="#">
                     <i class="fab color-4 fa-3x fa-facebook-f"></i>
                 </a>
@@ -449,6 +471,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+                $('#mob-nav').hide(1000);
+            } else {
+                $('#mob-nav').show(1000);
+            }
+        });
     </script>
 
 </body>
