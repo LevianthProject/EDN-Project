@@ -31,6 +31,10 @@ body .color-4 {
     color: #B1B1B1;
 }
 
+body .color-5 {
+    color: #639E30;
+}
+
 body .bg-1 {
     background-color: #30AB7F !important;
 }
@@ -40,6 +44,39 @@ body .JumboImg {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100%;
+}
+
+body .LoginBg {
+    background-image: url("image/loginBG.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: none;
+    outline: 0;
+}
+
+body .PpdbLoginBg {
+    background-image: url("image/ppdbLoginImg.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: none;
+    outline: 0;
+    max-width: 850px !important;
 }
 
 body .font-size-1 {
@@ -66,6 +103,10 @@ body .font-size-6 {
     font-size: 21px;
 }
 
+body .font-size-7 {
+    font-size: 32px;
+}
+
 .hr-styled {
     width: 100%;
     height: 3px;
@@ -85,6 +126,44 @@ body .font-size-6 {
     padding-right: .4rem;
 }
 
+.miniPeople {
+    position: absolute;
+    left: 20px;
+    /* top: 5px; */
+}
+
+.btn-logins {
+    color: #fff;
+    background-color: #639E30;
+    border-color: #639E30;
+}
+
+.btn-logins:hover {
+    color: #fff;
+}
+
+.btn-logins:active {
+    box-shadow: 0 0 .3rem .1rem #639e30af !important;
+}
+
+.btn-login-close {
+    box-sizing: content-box;
+    width: 2rem;
+    height: 2rem;
+    padding: .25em .25em;
+    color: #000;
+    background: #639E30 url("icon/closeIcon.png") center/1em auto no-repeat !important;
+    border: 0;
+    border-radius: 5rem;
+    opacity: 1 !important;
+    position: absolute;
+    right: 15%;
+    top: -10%;
+}
+
+.btn-login-close:active {
+    box-shadow: 0 0 .3rem .1rem #639e30af !important;
+}
 
 .z-10 {
     z-index: 100;
@@ -196,6 +275,22 @@ body .font-size-6 {
 }
 
 @media screen and (max-width: 990px) {
+
+    body .LoginBg {
+        background-image: url("image/loginBG.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 95% !important;
+        margin-top: auto;
+        margin-left: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: none;
+        outline: 0;
+    }
 
     .bg-unggul-cards-1 {
         background-repeat: no-repeat;
