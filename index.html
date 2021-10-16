@@ -81,7 +81,8 @@
                 </a>
             </li>
             <li class="d-flex align-items-center justify-content-center border-start">
-                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#">
+                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " data-bs-toggle="modal"
+                    data-bs-target="#ppdbMobileModals" href="#">
                     <img class="w-50 w-sm-50" src="assets/icon/IconPPDB1.svg" alt="">
                 </a>
             </li>
@@ -104,17 +105,17 @@
                 <div class="modal-body d-flex flex-column align-items-center justify-content-center ms-lg-5 ms-4 px-5">
                     <button type="button"
                         class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins">
-                        <img class="miniPeople" width="7%" src="assets/icon/miniPeople.svg" alt="">
+                        <img class="miniButtonIcon" width="7%" src="assets/icon/miniPeople.svg" alt="">
                         Guru
                     </button>
                     <button type="button"
                         class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins my-2 my-lg-3">
-                        <img class="miniPeople" width="7%" src="assets/icon/miniPeople.svg" alt="">
+                        <img class="miniButtonIcon" width="7%" src="assets/icon/miniPeople.svg" alt="">
                         Siswa
                     </button>
                     <button type="button"
                         class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins">
-                        <img class="miniPeople" width="7%" src="assets/icon/miniPeople.svg" alt="">
+                        <img class="miniButtonIcon" width="7%" src="assets/icon/miniPeople.svg" alt="">
                         Wali Murid
                     </button>
                 </div>
@@ -124,31 +125,109 @@
     <!-- End:Login Modal -->
 
     <!-- PPDB Modal-->
+    <!-- Desktop Version -->
     <div class="modal align-items-center fade" id="PpdbModal" tabindex="-1" aria-labelledby="PPBDmodals"
         aria-hidden="true">
         <div
             class="modal-dialog PpdbLoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
-            <div class="w-100 h-100 bg-transparent ms-5 ps-5 position-relative">
+            <div class="w-100 mx-height-1 bg-transparent ms-5 ps-5 position-relative  align-items-center">
+                <button type="button" class="btn-login-close-2 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-header mt-5 pt-5 mb-lg-3 mb-0 border-0 position-relative">
+                    <h5
+                        class="modal-title mb-lg-4 mb-3 pb-3 font-size-7 font-size-sm-1 position-absolute right-2 text-white fw-bolder">
+                        PPDB ONLINE
+                    </h5>
+                </div>
+                <div class="modal-body mt-4 pt-5 position-relative">
+                    <div class="w-40 position-absolute right-1">
+                        <button type="button"
+                            class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-start align-items-center position-relative btn-logins-2 fw-normal psp-lg-6">
+                            <svg class="miniButtonIcon" width="9%" width="42" height="48" viewBox="0 0 42 48"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.421875 6.42993V47.1799H41.1919V6.42993H0.421875ZM35.6919 41.6799H5.92188V11.9299H35.6919V41.6799Z"
+                                    fill="currentColor" />
+                                <path d="M30.5389 19.6699H12.3789V24.9398H30.5389V19.6699Z" fill="currentColor" />
+                                <path d="M29.6216 19.6699H24.3516V24.9398H29.6216V19.6699Z" fill="currentColor" />
+                                <path d="M24.0889 30.49H12.3789V35.76H24.0889V30.49Z" fill="currentColor" />
+                                <path d="M14.8684 0.919983H9.89844V9.53998H14.8684V0.919983Z" fill="currentColor" />
+                                <path d="M31.7005 0.919983H26.7305V9.53998H31.7005V0.919983Z" fill="currentColor" />
+                            </svg>
+                            Pendaftaran PPDB
+                        </button>
+                        <button type="button"
+                            class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-start align-items-center position-relative btn-logins-2 fw-normal my-2 my-lg-3 psp-lg-6">
+                            <svg class="miniButtonIcon" width="11%" width="55" height="47" viewBox="0 0 55 47"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.421875 6V46.75H41.1919V6H0.421875ZM35.6919 41.25H5.92188V11.5H35.6919V41.25Z"
+                                    fill="currentColor" />
+                                <path d="M30.5389 19.2H12.3789V24.47H30.5389V19.2Z" fill="currentColor" />
+                                <path d="M24.0889 30.01H12.3789V35.28H24.0889V30.01Z" fill="currentColor" />
+                                <path d="M14.8684 0.439941H9.89844V9.06006H14.8684V0.439941Z" fill="currentColor" />
+                                <path d="M31.7005 0.439941H26.7305V9.06006H31.7005V0.439941Z" fill="currentColor" />
+                                <path
+                                    d="M43.26 2.06984L27 24.2999V36.6099L37.72 31.8399L54.79 10.3999C54.79 10.3999 51.59 0.86984 43.26 2.06984Z"
+                                    fill="currentColor" />
+                            </svg>
+                            Daftar siswa lolos PPDB
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End:Desktop Version -->
+    <!-- Mobile Version -->
+    <div class="modal align-items-center fade" id="ppdbMobileModals" tabindex="-1" aria-labelledby="ppdbMobileModals"
+        aria-hidden="true">
+        <div
+            class="modal-dialog LoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
+            <div class="w-100 h-100 bg-transparent mx-5 px-5 position-relative">
                 <button type="button" class="btn-login-close shadow-none" data-bs-dismiss="modal"
                     aria-label="Close"></button>
                 <div class="modal-header ms-lg-5 ms-4 mb-lg-3 mb-0 border-0 justify-content-center flex-column">
-                    <h5 class="modal-title mb-lg-4 mb-3 font-size-7 font-size-sm-1 color-5 fw-bolder">Login</h5>
+                    <h5 class="modal-title mb-lg-4 mb-3 font-size-7 font-size-sm-1 color-5 fw-bolder">PPDB ONLINE</h5>
+                    <img class="" width="60%" src="assets/image/ppdbPeple.png" alt="">
                 </div>
-                <div class="modal-body d-flex flex-column align-items-center justify-content-end ms-lg-5 ms-4 ps-5">
+                <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center gap-2 ms-lg-5 ms-4 px-5">
                     <button type="button"
-                        class="btn w-25 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins">
-                        <img class="miniPeople" width="7%" src="assets/icon/miniPeople.svg" alt="">
-                        Guru
+                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-start align-items-center position-relative btn-logins fw-normal psp-lg-6">
+                        <svg class="miniButtonIcon" width="9%" width="42" height="48" viewBox="0 0 42 48"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.421875 6.42993V47.1799H41.1919V6.42993H0.421875ZM35.6919 41.6799H5.92188V11.9299H35.6919V41.6799Z"
+                                fill="currentColor" />
+                            <path d="M30.5389 19.6699H12.3789V24.9398H30.5389V19.6699Z" fill="currentColor" />
+                            <path d="M29.6216 19.6699H24.3516V24.9398H29.6216V19.6699Z" fill="currentColor" />
+                            <path d="M24.0889 30.49H12.3789V35.76H24.0889V30.49Z" fill="currentColor" />
+                            <path d="M14.8684 0.919983H9.89844V9.53998H14.8684V0.919983Z" fill="currentColor" />
+                            <path d="M31.7005 0.919983H26.7305V9.53998H31.7005V0.919983Z" fill="currentColor" />
+                        </svg>
+                        Pendaftaran PPDB
                     </button>
                     <button type="button"
-                        class="btn w-25 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins my-2 my-lg-3">
-                        <img class="miniPeople" width="7%" src="assets/icon/miniPeople.svg" alt="">
-                        Siswa
+                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-start align-items-center position-relative btn-logins fw-normal psp-lg-6">
+                        <svg class="miniButtonIcon" width="9%" width="42" height="48" viewBox="0 0 42 48"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.421875 6.42993V47.1799H41.1919V6.42993H0.421875ZM35.6919 41.6799H5.92188V11.9299H35.6919V41.6799Z"
+                                fill="currentColor" />
+                            <path d="M30.5389 19.6699H12.3789V24.9398H30.5389V19.6699Z" fill="currentColor" />
+                            <path d="M29.6216 19.6699H24.3516V24.9398H29.6216V19.6699Z" fill="currentColor" />
+                            <path d="M24.0889 30.49H12.3789V35.76H24.0889V30.49Z" fill="currentColor" />
+                            <path d="M14.8684 0.919983H9.89844V9.53998H14.8684V0.919983Z" fill="currentColor" />
+                            <path d="M31.7005 0.919983H26.7305V9.53998H31.7005V0.919983Z" fill="currentColor" />
+                        </svg>
+                        Pendaftaran PPDB
                     </button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End:Mobile Version -->
     <!-- End:PPDB Modal -->
 
     <!-- Jumbotron -->

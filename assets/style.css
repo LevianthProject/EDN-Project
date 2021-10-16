@@ -126,7 +126,7 @@ body .font-size-7 {
     padding-right: .4rem;
 }
 
-.miniPeople {
+.miniButtonIcon {
     position: absolute;
     left: 20px;
     /* top: 5px; */
@@ -138,11 +138,24 @@ body .font-size-7 {
     border-color: #639E30;
 }
 
+.btn-logins-2 {
+    color: #7A6D6D;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 1px .2rem .1rem #51515151 !important;
+}
+
 .btn-logins:hover {
     color: #fff;
 }
 
-.btn-logins:active {
+.btn-logins-2:hover {
+    color: #3b3b3b;
+    box-shadow: 0 0px .0rem .0rem #51515151 !important;
+}
+
+.btn-logins:active,
+.btn-logins-2:active {
     box-shadow: 0 0 .3rem .1rem #639e30af !important;
 }
 
@@ -161,7 +174,24 @@ body .font-size-7 {
     top: -10%;
 }
 
-.btn-login-close:active {
+.btn-login-close-2 {
+    box-sizing: content-box;
+    width: 2rem;
+    height: 2rem;
+    padding: .25em .25em;
+    color: #000;
+    background: #639E30 url("icon/closeIcon.png") center/1em auto no-repeat !important;
+    border: 0;
+    border-radius: 5rem;
+    opacity: 1 !important;
+    position: absolute;
+    right: 15%;
+    top: -36%;
+}
+
+
+.btn-login-close:active,
+.btn-login-close-2:active {
     box-shadow: 0 0 .3rem .1rem #639e30af !important;
 }
 
@@ -179,6 +209,22 @@ body .font-size-7 {
 
 .w-90 {
     width: 90%;
+}
+
+.mx-height-1 {
+    height: 300px;
+}
+
+.psp-lg-6 {
+    padding-left: 25%;
+}
+
+.right-1 {
+    right: 16%;
+}
+
+.right-2 {
+    right: 20%;
 }
 
 .px-6 {
