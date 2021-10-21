@@ -334,6 +334,10 @@ body .font-size-7 {
         width: 40%;
     }
 
+    .w-md-30 {
+        width: 30%;
+    }
+
     body .LoginBg {
         background-image: url("image/loginBG.svg") !important;
         background-repeat: no-repeat;
