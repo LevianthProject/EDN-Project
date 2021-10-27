@@ -107,6 +107,10 @@ body .font-size-7 {
     font-size: 32px;
 }
 
+body .font-size-8 {
+    font-size: 15px;
+}
+
 .hr-styled {
     width: 100%;
     height: 3px;
@@ -207,6 +211,10 @@ body .font-size-7 {
     width: 35%;
 }
 
+.w-30 {
+    width: 30%;
+}
+
 .w-90 {
     width: 90%;
 }
@@ -225,6 +233,20 @@ body .font-size-7 {
 
 .right-2 {
     right: 20%;
+}
+
+.Telpons {
+    left: calc(50% - 17.5%);
+    top: 20%;
+}
+
+.Alamats {
+    right: calc(50% - 16%);
+    top: 20%;
+}
+
+.alamatLink:hover {
+    color: rgb(216, 216, 216) !important;
 }
 
 .px-6 {
@@ -273,6 +295,24 @@ body .font-size-7 {
 
 @media screen and (max-width: 460px) {
 
+    .mini-icons {
+        width: 15px;
+    }
+
+    .Telpons {
+        left: calc(50% - 23%);
+        top: 10%;
+    }
+
+    .Alamats {
+        right: calc(50% - 23%);
+        top: 10%;
+    }
+
+    body .font-size-xs-8 {
+        font-size: 7px;
+    }
+
     .w-sm-50 {
         width: 50% !important;
     }
@@ -300,8 +340,8 @@ body .font-size-7 {
     .img-places {
         display: flex;
         z-index: 100;
-        height: 20% !important;
-        width: 20% !important;
+        height: calc(20% - 1% - 0.2rem) !important;
+        width: calc(20% - 1% - 0.2rem) !important;
     }
 
     .gallery-wrapper input[type=radio] {
@@ -329,6 +369,27 @@ body .font-size-7 {
 }
 
 @media screen and (max-width: 990px) {
+
+    .img-mid-places {
+        width: calc(110px - 3.5rem);
+        margin-bottom: 4px;
+    }
+
+    .img-mid-places-1 {
+        width: calc(110px - 1.5rem);
+        margin-bottom: 4px;
+    }
+
+    .img-xs-places {
+        width: calc(100px - 3.5rem) !important;
+    }
+
+    .img-mid-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px !important;
+    }
 
     .w-md-40 {
         width: 40%;
@@ -548,8 +609,16 @@ body .font-size-7 {
 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1250px) {
+    body .font-size-xl-1 {
+        font-size: 60px;
+    }
+}
 
+@media only screen and (min-width: 992px) {
+    .mini-icons {
+        width: 30px;
+    }
 
     .bg-unggul-main {
         background-repeat: no-repeat;
@@ -560,8 +629,23 @@ body .font-size-7 {
 
     .img-places {
         display: flex;
-        height: 13%;
-        width: 13%;
+        height: calc(15% - 2% + .5rem);
+        width: calc(15% - 2% + .5rem);
+    }
+
+    .img-mid-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 130px !important;
+    }
+
+    .img-mid-places {
+        width: calc(150px - 1.6rem);
+    }
+
+    .img-mid-places-1 {
+        width: calc(180px - .6rem);
     }
 
     .maps-responsive {

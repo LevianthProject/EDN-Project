@@ -76,7 +76,8 @@
                 </a>
             </li>
             <li class="d-flex align-items-center justify-content-center px-3 mx-1">
-                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " href="#">
+                <a class="navbar-brand mx-0 d-flex align-items-center justify-content-center " data-bs-toggle="modal"
+                    data-bs-target="#KalenderMobileModals" href="#">
                     <img class="w-50 w-sm-80" src="assets/icon/IconKalenders.svg" alt="">
                 </a>
             </li>
@@ -231,21 +232,131 @@
     <!-- End:Mobile Version -->
     <!-- End:PPDB Modal -->
 
+    <!-- PPDB Modal-->
+    <!-- Desktop Version -->
+    <div class="modal align-items-center fade" id="KalenderModal" tabindex="-1" aria-labelledby="PPBDmodals"
+        aria-hidden="true">
+        <div
+            class="modal-dialog PpdbLoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
+            <div class="w-100 mx-height-1 bg-transparent ms-5 ps-5 position-relative  align-items-center">
+                <button type="button" class="btn-login-close-2 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-header mt-5 pt-5 mb-lg-3 mb-0 border-0 position-relative">
+                    <h5
+                        class="modal-title mb-lg-4 mb-3 pb-3 font-size-7 font-size-sm-1 position-absolute right-2 text-white fw-bolder">
+                        PPDB ONLINE
+                    </h5>
+                </div>
+                <div class="modal-body mt-4 pt-5 position-relative">
+                    <div class="w-40 position-absolute right-1">
+                        <button type="button"
+                            class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-start align-items-center position-relative btn-logins-2 fw-normal psp-lg-6">
+                            <svg class="miniButtonIcon" width="9%" width="42" height="48" viewBox="0 0 42 48"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.421875 6.42993V47.1799H41.1919V6.42993H0.421875ZM35.6919 41.6799H5.92188V11.9299H35.6919V41.6799Z"
+                                    fill="currentColor" />
+                                <path d="M30.5389 19.6699H12.3789V24.9398H30.5389V19.6699Z" fill="currentColor" />
+                                <path d="M29.6216 19.6699H24.3516V24.9398H29.6216V19.6699Z" fill="currentColor" />
+                                <path d="M24.0889 30.49H12.3789V35.76H24.0889V30.49Z" fill="currentColor" />
+                                <path d="M14.8684 0.919983H9.89844V9.53998H14.8684V0.919983Z" fill="currentColor" />
+                                <path d="M31.7005 0.919983H26.7305V9.53998H31.7005V0.919983Z" fill="currentColor" />
+                            </svg>
+                            Pendaftaran PPDB
+                        </button>
+                        <button type="button"
+                            class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-start align-items-center position-relative btn-logins-2 fw-normal my-2 my-lg-3 psp-lg-6">
+                            <svg class="miniButtonIcon" width="11%" width="55" height="47" viewBox="0 0 55 47"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.421875 6V46.75H41.1919V6H0.421875ZM35.6919 41.25H5.92188V11.5H35.6919V41.25Z"
+                                    fill="currentColor" />
+                                <path d="M30.5389 19.2H12.3789V24.47H30.5389V19.2Z" fill="currentColor" />
+                                <path d="M24.0889 30.01H12.3789V35.28H24.0889V30.01Z" fill="currentColor" />
+                                <path d="M14.8684 0.439941H9.89844V9.06006H14.8684V0.439941Z" fill="currentColor" />
+                                <path d="M31.7005 0.439941H26.7305V9.06006H31.7005V0.439941Z" fill="currentColor" />
+                                <path
+                                    d="M43.26 2.06984L27 24.2999V36.6099L37.72 31.8399L54.79 10.3999C54.79 10.3999 51.59 0.86984 43.26 2.06984Z"
+                                    fill="currentColor" />
+                            </svg>
+                            Daftar siswa lolos PPDB
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End:Desktop Version -->
+    <!-- Mobile Version -->
+    <div class="modal align-items-center fade" id="KalenderMobileModals" tabindex="-1"
+        aria-labelledby="ppdbMobileModals" aria-hidden="true">
+        <div
+            class="modal-dialog ppdbLoginMobile d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
+            <div class="w-100 h-100 bg-transparent mx-5 px-5 position-relative">
+                <button type="button" class="btn-login-close shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-header ms-lg-5 ms-4 mb-lg-3 mb-0 border-0 justify-content-center flex-column">
+                    <h5 class="modal-title mb-lg-4 mb-3 font-size-7 font-size-sm-1 text-white fw-bolder">PPDB ONLINE
+                    </h5>
+                    <img class="" width="60%" src="assets/image/ppdbPeple.png" alt="">
+                </div>
+                <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center gap-2 ms-lg-5 ms-4 px-5">
+                    <button type="button"
+                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-start align-items-center position-relative btn-logins-2 fw-normal psp-lg-6">
+                        <svg class="miniButtonIcon" width="9%" width="42" height="48" viewBox="0 0 42 48"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.421875 6.42993V47.1799H41.1919V6.42993H0.421875ZM35.6919 41.6799H5.92188V11.9299H35.6919V41.6799Z"
+                                fill="currentColor" />
+                            <path d="M30.5389 19.6699H12.3789V24.9398H30.5389V19.6699Z" fill="currentColor" />
+                            <path d="M29.6216 19.6699H24.3516V24.9398H29.6216V19.6699Z" fill="currentColor" />
+                            <path d="M24.0889 30.49H12.3789V35.76H24.0889V30.49Z" fill="currentColor" />
+                            <path d="M14.8684 0.919983H9.89844V9.53998H14.8684V0.919983Z" fill="currentColor" />
+                            <path d="M31.7005 0.919983H26.7305V9.53998H31.7005V0.919983Z" fill="currentColor" />
+                        </svg>
+                        Pendaftaran PPDB
+                    </button>
+                    <button type="button"
+                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-start align-items-center position-relative btn-logins-2 fw-normal psp-lg-6">
+                        <svg class="miniButtonIcon" width="9%" width="42" height="48" viewBox="0 0 42 48"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.421875 6.42993V47.1799H41.1919V6.42993H0.421875ZM35.6919 41.6799H5.92188V11.9299H35.6919V41.6799Z"
+                                fill="currentColor" />
+                            <path d="M30.5389 19.6699H12.3789V24.9398H30.5389V19.6699Z" fill="currentColor" />
+                            <path d="M29.6216 19.6699H24.3516V24.9398H29.6216V19.6699Z" fill="currentColor" />
+                            <path d="M24.0889 30.49H12.3789V35.76H24.0889V30.49Z" fill="currentColor" />
+                            <path d="M14.8684 0.919983H9.89844V9.53998H14.8684V0.919983Z" fill="currentColor" />
+                            <path d="M31.7005 0.919983H26.7305V9.53998H31.7005V0.919983Z" fill="currentColor" />
+                        </svg>
+                        Pendaftaran PPDB
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End:Mobile Version -->
+    <!-- End:PPDB Modal -->
+
     <!-- Jumbotron -->
     <div class="container-fluid mb-lg-5 px-0 ">
         <div class="container-fluid JumboImg d-flex flex-column justify-content-center mt-n1">
             <div class="d-flex flex-column">
-                <div class="d-flex flex-row justify-content-lg-evenly justify-content-between pt-lg-0 pt-3">
-                    <div class="img-places pt-lg-4 mt-lg-2 align-items-center justify-content-start me-lg-5">
-                        <img class="w-100 h-100" src="assets/image/logo_EDNA.png" alt="">
-                        <!-- <img class="mt-4 pe-5 me-5" width="224" height="145" src="assets/image/logo_EDNA.png" alt=""> -->
+                <div class="d-flex flex-row justify-content-lg-evenly justify-content-around pt-lg-0 pt-lg-3 pt-2">
+                    <div class="img-mid-container align-items-center justify-content-start me-lg-5">
+                        <img class="img-mid-places-1" src="assets/image/logo_NEW_EDNA_WARNA.svg" alt="">
                     </div>
+
                     <div class="d-flex flex-column justify-content-center">
-                        <h1 class="font-poppins mt-lg-5 pt-lg-5  text-white font-size-1 font-size-sm-4 text-center">
-                            Sistem
-                            Informasi Sekolah</h1>
+                        <div class="img-mid-container mx-auto">
+                            <img class="img-mid-places img-xs-places" width=""
+                                src="http://ppi-alanwarjambi.com/ppdb/img/logo.png" alt="">
+                        </div>
+                        <h1 class="font-poppins text-white font-size-xl-1 font-size-sm-5 text-center mt-n1">
+                            PPI Al Anwar Jambi</h1>
                         <button
-                            class="btn d-lg-none mx-auto d-block w-75 bg-3 btn-sm py-1 mt-2 text-white shadow-none rounded-pill"
+                            class="btn d-lg-none mx-auto d-block w-75 bg-3 btn-sm mb-2 text-white shadow-none rounded-pill"
                             type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
                             <svg width="15" class="me-2" height="23" viewBox="0 0 27 35" fill="currentColor"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -259,13 +370,13 @@
                             Log In
                         </button>
                     </div>
-                    <div class="img-places pt-lg-3 justify-content-end ms-lg-5">
-                        <img class="w-100 h-100" src="assets/image/logo_tut.png" alt="">
-                        <!-- <img class="mt-2 ps-5 ms-5" src="assets/image/logo_tut.png" alt=""> -->
+
+                    <div class="img-mid-container justify-content-end ms-lg-5">
+                        <img class="img-mid-places" src="assets/image/logo_tut.png" alt="">
                     </div>
                 </div>
                 <!-- Menu -->
-                <div class="px-lg-7 mt-lg-5">
+                <div class="px-lg-7 mt-lg-3">
                     <nav
                         class="navbar d-lg-block d-none shadow d-flex mb-3 justify-content-center rounded-pill navbar-light bg-2 container-md">
                         <div class="w-100 d-flex flex-row justify-content-center px-1">
@@ -329,7 +440,8 @@
                                 </a>
                             </li>
                             <li class="d-flex align-items-center flex-row justify-content-center">
-                                <a class="d-flex align-items-center flex-row justify-content-center navbar-brand py-2 px-0 mx-0"
+                                <a data-bs-toggle="modal" data-bs-target="#KalenderModal" href="#"
+                                    class="d-flex align-items-center flex-row justify-content-center navbar-brand py-2 px-0 mx-0"
                                     href="#">
                                     <svg class="me-2" width="16%" viewBox="0 0 41 48" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -374,11 +486,47 @@
                 <!-- End:Menu -->
             </div>
             <div
-                class="container-fluid d-flex justify-content-center flex-column align-items-center mt-lg-5 position-relative">
-                <img class=" w-40 w-sm-70 d-lg-block d-none" src="assets/image/peopleBrand-2.svg" alt="">
-                <img class="mb-3 w-40 w-sm-40 d-lg-none d-block" src="assets/image/peopleBrand-des-mobile.svg" alt="">
-                <img class="ms-5 ps-3 w-40 w-sm-50 d-lg-none d-block" src="assets/image/peopleBrand-ppl-mobile.svg"
-                    alt="">
+                class="container-fluid d-flex justify-content-center flex-column align-items-center mx-auto mt-xl-5 ps-lg-5 position-relative">
+                <div class="d-flex flex-column">
+                    <div class="position-relative mx-auto pe-lg-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img draggable="false" class="mini-icons" src="assets/icon/IconJam.svg" width="30px" alt="">
+                            <h3 class="text-white font-size-8 font-size-xs-8 fw-light mb-0 mt-1">Waktu Belajar</h3>
+                            <p class="text-white fw-light font-size-8 font-size-xs-8">Senin - Selasa
+                                <span class="text-black">08:00</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="position-absolute Telpons">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img draggable="false" class="mini-icons" src="assets/icon/IconTelp.svg" width="30px"
+                                alt="">
+                            <h3 class="text-white font-size-8 font-size-xs-8 fw-light mb-0 mt-1">Kontak</h3>
+                            <p class="text-black fw-light font-size-8 font-size-xs-8">+62 812 345 6789
+                            </p>
+                        </div>
+                    </div>
+                    <div class="position-absolute Alamats">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img draggable="false" class="mini-icons" src="assets/icon/IconMaps.svg" width="20px"
+                                alt="">
+                            <h3 class="text-white font-size-8 font-size-xs-8 fw-light mb-0 mt-1">Alamat</h3>
+                            <a href=""
+                                class="text-black fw-light font-size-8 font-size-xs-8 text-decoration-none alamatLink">Buka
+                                Alamat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 mx-auto d-flex justify-content-center">
+                    <img class=" w-25 w-sm-70 d-lg-block d-none mx-auto" draggable="false"
+                        src="assets/image/peopleBrand-only.png" alt="">
+                </div>
+                <img class="ms-5 w-40 w-sm-35 d-lg-none d-block" src="assets/image/peopleBrand-ppl-mobile.svg" alt="">
+                <!-- Mobile -->
+                <!-- <img class="mb-3 w-40 w-sm-40 d-lg-none d-block" src="assets/image/peopleBrand-des-mobile.svg" alt="">
+
+                <!-- End:mobile -->
             </div>
         </div>
     </div>
