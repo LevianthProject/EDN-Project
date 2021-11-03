@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/calender/css/style.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>EDNA PROJECT</title>
 
@@ -105,17 +106,17 @@
                 </div>
                 <div class="modal-body d-flex flex-column align-items-center justify-content-center ms-lg-5 ms-4 px-5">
                     <button type="button"
-                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins">
+                        class="btn w-100 w-max-95 shadow-none rounded-pill font-poppins d-flex flex-row justify-content-center align-items-center position-relative btn-logins">
                         <img class="miniButtonIcon" width="7%" src="assets/icon/miniPeople.svg" alt="">
                         Guru
                     </button>
-                    <button type="button"
-                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins my-2 my-lg-3">
+                    <button type="button" data-bs-target="#loginSiswa" data-bs-toggle="modal"
+                        class="btn w-100 w-max-95 shadow-none rounded-pill font-poppins d-flex flex-row justify-content-center align-items-center position-relative btn-logins my-2 my-lg-3">
                         <img class="miniButtonIcon" width="7%" src="assets/icon/miniPeople.svg" alt="">
                         Siswa
                     </button>
                     <button type="button"
-                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins">
+                        class="btn w-100 w-max-95 shadow-none rounded-pill font-poppins d-flex flex-row justify-content-center align-items-center position-relative btn-logins">
                         <img class="miniButtonIcon" width="7%" src="assets/icon/miniPeople.svg" alt="">
                         Wali Murid
                     </button>
@@ -123,7 +124,86 @@
             </div>
         </div>
     </div>
+    <!-- SignUp -->
+    <div class="modal align-items-center fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModals"
+        aria-hidden="true">
+        <div
+            class="modal-dialog LoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
+            <div class="w-100 h-100 bg-transparent mx-5 px-5 position-relative">
+                <button type="button" class="btn-login-close-5 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div
+                    class="modal-header py-lg-0 py-2 ms-lg-5 ms-4 mb-lg-2 mb-0 border-0 justify-content-center flex-column">
+                    <h5 class="modal-title mb-lg-2 mb-3 font-size-7 font-size-sm-6 color-5 fw-bolder">Sign Up</h5>
+                    <img class="login-vector-responsive" src="assets/image/loginImage.png" alt="">
+                </div>
+                <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center ms-lg-5 ms-4 px-4 py-2">
+                    <div class="mb-1 w-100 w-max-95">
+                        <label for="SignUpModal" class="font-poppins form-label font-size-sm-4 shadow-none">Email
+                            address</label>
+                        <input type="email" class="font-poppins form-control font-size-sm-2" id="SignUpModal"
+                            placeholder="nama@email.com">
+                    </div>
+                    <div class="mt-1 w-100 w-max-95">
+                        <label for="SiswaPassword"
+                            class="font-poppins form-label font-size-sm-4 shadow-none">Password</label>
+                        <input type="password" class="font-poppins form-control font-size-sm-2" id="SiswaPassword">
+                    </div>
+                    <button type="button"
+                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative btn-logins my-3 mt-lg-3">
+                        Sign Up
+                    </button>
+                    <p class="font-size-9 mt-2 mb-3 font-poppins">sudah punya akun?
+                        <a href="" data-bs-target="#SignUpModal" data-bs-toggle="modal">Login!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End:SignUp -->
+
+    <!-- LoginSiswa -->
+    <div class="modal align-items-center fade" id="loginSiswa" tabindex="-1" aria-labelledby="loginSiswas"
+        aria-hidden="true">
+        <div
+            class="modal-dialog LoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
+            <div class="w-100 h-100 bg-transparent mx-5 px-5 position-relative">
+                <button type="button" class="btn-login-close-5 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-header py-1 ms-lg-5 ms-4 mb-lg-3 mb-1 border-0 justify-content-center flex-column">
+                    <h5 class="modal-title mb-lg-4 mb-2 font-size-7 font-size-sm-6 color-5 fw-bolder">Login Siswa</h5>
+                    <img class="login-vector-responsive" src="assets/image/loginImage.png" alt="">
+                </div>
+                <div
+                    class="modal-body d-flex flex-column align-items-center justify-content-center ms-lg-5 ms-4 px-4 py-0">
+                    <div class="my-1 w-100 w-max-95">
+                        <label for="Siswalogin" class="font-poppins form-label font-size-sm-4 shadow-none">Email
+                            address</label>
+                        <input type="email" class="font-poppins form-control font-size-sm-2" id="Siswalogin"
+                            placeholder="namaSiswa@google.com">
+                    </div>
+                    <div class="mt-1 w-100 w-max-95">
+                        <label for="SiswaPassword"
+                            class="font-poppins form-label font-size-sm-4 shadow-none">Password</label>
+                        <input type="password" class="font-poppins form-control font-size-sm-2" id="SiswaPassword">
+                    </div>
+                    <button type="button"
+                        class="btn w-100 w-max-95 shadow-none rounded-pill d-flex flex-row justify-content-center align-items-center position-relative font-poppins btn-logins mt-3 mb-1 mt-lg-3">
+                        Login
+                    </button>
+                    <p class="font-size-9 mt-2 mb-3 font-poppins">belum punya akun?
+                        <a href="" data-bs-target="#SignUpModal" data-bs-toggle="modal">Sign Up!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End:Login Siswa -->
+
     <!-- End:Login Modal -->
+
+
 
     <!-- PPDB Modal-->
     <!-- Desktop Version -->
@@ -237,25 +317,12 @@
     <div class="modal align-items-center fade" id="KalenderModal" tabindex="-1" aria-labelledby="PPBDmodals"
         aria-hidden="true">
         <div
-            class="modal-dialog KalenderBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
-            <div class="w-100 mx-height-2 bg-transparent ms-5 ps-5 position-relative  align-items-center">
+            class="modal-dialog modal-lg KalenderBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
+            <div class="w-100 mx-height-2 bg-transparent position-relative justify-content-center d-flex mt-5 pt-5">
                 <button type="button" class="btn-login-close-3 shadow-none" data-bs-dismiss="modal"
                     aria-label="Close"></button>
-                <div class="modal-body h-100 w-40 bg-4 rounded position-absolute right-1 me-lg-2 overflow-auto">
-                    <div class="position-relative d-flex justify-content-center flex-column">
-                        <img src="assets/image/kalendersMinis.jpg" alt="">
-                        <img src="assets/image/kalendersMinis.jpg" alt="">
-                        <img src="assets/image/kalendersMinis.jpg" alt="">
-                        <img src="assets/image/kalendersMinis.jpg" alt="">
-                        <h5>Siap digunakan dengan menyesuaikan width container </h5>
-                        <img src="assets/image/logo_tut.png" alt="">
-                        <h1>TEST Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptate!
-                            Incidunt
-                            esse mollitia, quaerat amet ut, placeat nesciunt consequuntur adipisci deserunt at voluptate
-                            eaque sit minima! Voluptatibus exercitationem aliquam alias!</h1>
-                        <img src="assets/image/logo_NEW_EDNA_WARNA.svg" alt="">
-                        <img src="assets/image/logo_NEW_EDNA_WARNA.svg" alt="">
-                    </div>
+                <div class="modal-body h-100 w-75 bg-4 rounded position-absolute overflow-auto">
+                    <div id="app"></div>
                 </div>
             </div>
         </div>
@@ -708,6 +775,8 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+    <script src="assets/calender/js/script.js"></script>
+
 
     <script>
         $(window).scroll(function () {
