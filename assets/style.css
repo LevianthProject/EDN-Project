@@ -427,6 +427,11 @@ body .font-size-9 {
 /* Responsive */
 
 @media screen and (max-width: 460px) {
+
+    body .JumboImg {
+        background-size: 140%;
+    }
+
     .profile-user-size {
         width: 50px;
     }
@@ -547,6 +552,12 @@ body .font-size-9 {
 
 }
 
+@media screen and (max-width: 375px) {
+    body .JumboImg {
+        background-size: 160% !important;
+    }
+}
+
 @media screen and (max-width: 990px) {
     .foo-height {
         height: 50px
@@ -557,12 +568,12 @@ body .font-size-9 {
     }
 
     .img-mid-places {
-        width: calc(110px - 3.5rem);
+        width: calc(90px - 2.5rem);
         margin-bottom: 4px;
     }
 
     .img-mid-places-1 {
-        width: calc(110px - 1.5rem);
+        width: calc(90px - 1.5rem);
         margin-bottom: 4px;
     }
 
