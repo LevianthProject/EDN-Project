@@ -7,6 +7,10 @@ body {
     background-color: #E8EDEF;
 }
 
+.bg-imgs {
+    background: url(image/bg-bubble-1.png) no-repeat scroll 120% 10%, url(image/bg-ppls.png) no-repeat scroll left 50%;
+}
+
 body .font-poppins {
     font-family: 'Poppins', sans-serif !important;
 }
@@ -55,6 +59,10 @@ body .bg-4 {
     background-color: #eae5e5 !important;
 }
 
+.bg-gradie {
+    background: linear-gradient(270deg, #0FA091 -2.03%, #54B566 100%);
+}
+
 body .JumboImg {
     background-image: url("image/jumbotronImage.svg");
     background-repeat: no-repeat;
@@ -100,7 +108,7 @@ body .KalenderBg {
     pointer-events: auto;
     background-color: none;
     outline: 0;
-    max-width: 1020px !important;
+    max-width: 1000px !important;
 }
 
 body .font-size-1 {
@@ -139,6 +147,67 @@ body .font-size-9 {
     font-size: 12px;
 }
 
+.cards-profiles {
+    width: 100%;
+    font-family: 'Poppins', sans-serif !important;
+    border-radius: 1rem !important;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+}
+
+.cards-tabs {
+    font-family: 'Poppins', sans-serif !important;
+    border-radius: 1rem !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-profile-detail {
+    font-family: 'Poppins', sans-serif !important;
+    border-radius: 1rem !important;
+    width: 100%;
+    height: 417px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.mini-cards {
+    font-family: 'Poppins', sans-serif !important;
+    padding: .8rem .9rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative !important;
+    align-items: center;
+    border-radius: 1rem !important;
+    width: 210px;
+    height: 180px;
+    background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
+}
+
+.mini-cards:hover {
+    color: #fff;
+    box-shadow: 0 1px .5rem .1em #51515151 !important;
+}
+
+.profile-user-size {
+    width: 80px;
+}
+
+.mini-rights {
+    margin-left: 60%;
+}
+
+.minis-icon-responsive {
+    width: 20px;
+}
 
 .hr-styled {
     width: 100%;
@@ -242,6 +311,10 @@ body .font-size-9 {
     position: absolute;
 }
 
+.table>:not(caption)>*>* {
+    padding: 0rem;
+}
+
 .form-control:focus {
     border-color: #639E30;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 7px #639e30a5;
@@ -253,6 +326,10 @@ body .font-size-9 {
 
 .top-60 {
     top: 30%;
+}
+
+.foo-height {
+    height: 60px;
 }
 
 .w-40 {
@@ -281,6 +358,10 @@ body .font-size-9 {
 
 .mx-height-2 {
     height: 380px;
+}
+
+.mx-height-3 {
+    height: 450px;
 }
 
 .psp-lg-6 {
@@ -346,6 +427,52 @@ body .font-size-9 {
 /* Responsive */
 
 @media screen and (max-width: 460px) {
+    .profile-user-size {
+        width: 50px;
+    }
+
+    .bg-imgs {
+        background: url(image/bg-bubble-1.png) no-repeat scroll 120% 10%, url(image/bg-ppls.png) no-repeat scroll left 100%;
+    }
+
+    .cards-profile-detail {
+        font-family: 'Poppins', sans-serif !important;
+        border-radius: 1rem !important;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .table>:not(caption)>*>* {
+        padding: .5rem !important;
+    }
+
+    .mini-cards {
+        font-family: 'Poppins', sans-serif !important;
+        padding: .6rem .7rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        position: relative !important;
+        align-items: center;
+        border-radius: 1rem !important;
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
+    }
+
+    .cards-tabs {
+        font-family: 'Poppins', sans-serif !important;
+        border-radius: 1rem !important;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
 
     .mini-icons {
         width: 15px;
@@ -421,6 +548,10 @@ body .font-size-9 {
 }
 
 @media screen and (max-width: 990px) {
+    .foo-height {
+        height: 50px
+    }
+
     .login-vector-responsive {
         width: 45%;
     }
@@ -519,6 +650,10 @@ body .font-size-9 {
 
     .font-size-sm-6 {
         font-size: 21px !important;
+    }
+
+    .font-size-sm-7 {
+        font-size: 11px !important;
     }
 
     .w-max-95 {
@@ -674,6 +809,10 @@ body .font-size-9 {
 @media only screen and (min-width: 992px) {
     .login-vector-responsive {
         width: 50%;
+    }
+
+    .overflow-lg-hide {
+        overflow-y: hidden;
     }
 
     .mini-icons {

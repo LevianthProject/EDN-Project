@@ -16,7 +16,8 @@ html body .card {
 }
 
 html body .card-header {
-    background: #5c3037;
+    background-image: linear-gradient(90deg, #019C9C, #66BB5C);
+    /* background-color: #019C9C; */
     color: #fff
 }
 
@@ -29,11 +30,11 @@ html body .card-header .nextMonth {
 }
 
 html body .card-body {
-    background: #f1acb7
+    background: #D3D3D3;
 }
 
 html body .card-body .days span {
-    background: #e27586;
+    background: #939090;
     color: #fff;
     border-radius: 50%;
     display: inline-block;
@@ -44,11 +45,11 @@ html body .card-body .days span {
 }
 
 html body .card-body .days span:hover {
-    background: #f7899a
+    background: #019C9C
 }
 
 html body .card-body .dates span {
-    background: #f4bdc6;
+    background: #fff;
     color: #000;
     border-radius: 50%;
     display: inline-block;
@@ -60,18 +61,18 @@ html body .card-body .dates span {
 
 html body .card-body .dates span.active,
 html body .card-body .dates span:hover {
-    background: #ffeef0;
-    color: #000
+    background: #019C9C;
+    color: #fff
 }
 
 html body .card-body .dates span.ntMonth {
-    color: #938e8e;
-    background: #ffd8de
+    color: #f1f1f1;
+    background: #7C7B7B
 }
 
 html body .card-body .dates span.ntMonth:hover {
-    background: #ffeef0;
-    color: #000
+    background: #019C9C;
+    color: #fff
 }
 
 html body .card#event .card-header .close {
@@ -95,10 +96,15 @@ html body .card#event .card-body .events-input .error {
     top: 100%
 }
 
+html body .pa-sm {
+    position: absolute
+}
+
+html body .bg-date-ctive {
+    background-color: #019C9C !important;
+}
+
 @media(max-width: 767px) {
-    html body .pa-sm {
-        position: absolute
-    }
 
     html body .card-body .days span {
         height: 38px;

@@ -11,10 +11,10 @@ let year = c_date.getFullYear();
 
 (function App() {
 
-    const calendar = `<div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-12 d-flex">
-                    <div class="card border-0 mt-5 flex-fill">
+    const calendar = `<div class="container-fluid px-0">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-8 col-12 px-0 d-flex">
+                    <div class="card border-0 flex-fill">
                         <div class="card-header py-3 d-flex justify-content-between">
                             <span class="prevMonth">&#10096;</span>
                             <span><strong id="s_m"></strong></span>
@@ -36,8 +36,8 @@ let year = c_date.getFullYear();
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-12 d-flex pa-sm">
-                    <div class="card border-0 mt-5 flex-fill d-none" id="event">
+                <div class="col-sm-8 col-12 px-0 d-flex pa-sm">
+                    <div class="card border-0 flex-fill d-none" id="event">
                         <div class="card-header py-3 text-center">
                             Add Event
                             <button type="button" class="close hide">
@@ -131,7 +131,7 @@ function renderCalendar(m, y) {
                 let cellText = document.createTextNode(date);
                 span.classList.add('showEvent');
                 if (date === c_date.getDate() && y === c_date.getFullYear() && m === c_date.getMonth()) {
-                    span.classList.add('bg-danger');
+                    span.classList.add('bg-date-ctive');
                 } 
                 cell.appendChild(span).appendChild(cellText);
                 row.appendChild(cell);
