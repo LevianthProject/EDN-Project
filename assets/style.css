@@ -59,6 +59,18 @@ body .bg-4 {
     background-color: #eae5e5 !important;
 }
 
+body .bg-5 {
+    background-color: #707070;
+}
+
+body .bg-6 {
+    background-color: #C4C0C0;
+}
+
+body .bg-7 {
+    background-color: #C1C3C4;
+}
+
 .bg-gradie {
     background: linear-gradient(270deg, #0FA091 -2.03%, #54B566 100%);
 }
@@ -187,8 +199,8 @@ body .font-size-9 {
     position: relative !important;
     align-items: center;
     border-radius: 1rem !important;
-    width: 220px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
 }
 
@@ -312,12 +324,26 @@ body .font-size-9 {
 }
 
 .table>:not(caption)>*>* {
-    padding: 0rem;
+    padding: 0rem .3rem;
 }
 
 .form-control:focus {
     border-color: #639E30;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 7px #639e30a5;
+}
+
+.tabs-control:focus {
+    background-color: white !important;
+    border-color: #000000 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 7px #639e30a5;
+}
+
+.logo-tut-resp {
+    width: 80px;
+}
+
+.logo-checks-resp {
+    width: 40px;
 }
 
 .z-10 {
@@ -366,6 +392,10 @@ body .font-size-9 {
 
 .psp-lg-6 {
     padding-left: 25%;
+}
+
+.right-0 {
+    right: 8%;
 }
 
 .right-1 {
@@ -428,6 +458,18 @@ body .font-size-9 {
 
 @media screen and (max-width: 460px) {
 
+    .logo-tut-resp {
+        width: 50px;
+    }
+
+    .logo-checks-resp {
+        width: 30px;
+    }
+
+    .w-sm-100 {
+        width: 100% !important;
+    }
+
     body .JumboImg {
         background-size: 140%;
     }
@@ -463,8 +505,8 @@ body .font-size-9 {
         position: relative !important;
         align-items: center;
         border-radius: 1rem !important;
-        width: 100%;
-        height: 120px;
+        width: 175px;
+        height: 125px;
         background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
     }
 
@@ -552,9 +594,23 @@ body .font-size-9 {
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     body .JumboImg {
         background-size: 160% !important;
+    }
+
+    .mini-cards {
+        font-family: 'Poppins', sans-serif !important;
+        padding: .6rem .7rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        position: relative !important;
+        align-items: center;
+        border-radius: 1rem !important;
+        width: 120px;
+        height: 125px;
+        background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
     }
 }
 
@@ -665,6 +721,10 @@ body .font-size-9 {
 
     .font-size-sm-7 {
         font-size: 11px !important;
+    }
+
+    .font-size-sm-8 {
+        font-size: 9px !important;
     }
 
     .w-max-95 {
@@ -990,6 +1050,22 @@ body .font-size-9 {
     #gallerys-3:checked~.cards-gallery #images-3 img {
         box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
     }
+}
 
+@media screen and (max-width: 320px) {
+    .fs-xs-1 {
+        font-size: 8px !important;
+    }
 
+    .fs-xs-2 {
+        font-size: 7px !important;
+    }
+
+    .fs-xs-3 {
+        font-size: 12px !important;
+    }
+
+    .fs-xs-4 {
+        font-size: 14px !important;
+    }
 }
