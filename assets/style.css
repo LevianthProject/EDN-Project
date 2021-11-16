@@ -11,6 +11,10 @@ body {
     background: url(image/bg-bubble-1.png) no-repeat scroll 120% 10%, url(image/bg-ppls.png) no-repeat scroll left 50%;
 }
 
+.bg-imgs-2 {
+    background: url(image/bg-bubble-1.png) no-repeat scroll 120% 10%;
+}
+
 body .font-poppins {
     font-family: 'Poppins', sans-serif !important;
 }
@@ -102,10 +106,6 @@ body .PpdbLoginBg {
     background-image: url("image/ppdbLoginImg.png") !important;
 }
 
-body .KalenderBg {
-    background-image: url("image/kalenderDesk.png") !important;
-}
-
 body .PpdbLoginBg,
 body .KalenderBg {
     background-repeat: no-repeat;
@@ -157,6 +157,10 @@ body .font-size-8 {
 
 body .font-size-9 {
     font-size: 12px;
+}
+
+.min-vh-80 {
+    min-height: 80vh !important;
 }
 
 .cards-profiles {
@@ -288,18 +292,9 @@ body .font-size-9 {
 
 .btn-login-close-2 {
     right: 15%;
-    top: -36%;
+    top: -50%;
 }
 
-.btn-login-close-3 {
-    right: 15%;
-    top: -18%;
-}
-
-.btn-login-close-4 {
-    right: 15%;
-    top: -5%;
-}
 
 .btn-login-close-5 {
     right: 15%;
@@ -323,7 +318,21 @@ body .font-size-9 {
     position: absolute;
 }
 
-.table>:not(caption)>*>* {
+.btn-close-cals {
+    box-sizing: content-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .25em .25em;
+    color: #000;
+    background: #639E30 url("icon/closeIcon.png") center/1em auto no-repeat !important;
+    border: 0;
+    border-radius: 5rem;
+    opacity: 1 !important;
+    position: absolute;
+    left: 77%;
+}
+
+.tab-desc .table>:not(caption)>*>* {
     padding: 0rem .3rem;
 }
 
@@ -413,7 +422,7 @@ body .font-size-9 {
 
 .Alamats {
     right: calc(50% - 16%);
-    top: 20%;
+    top: 18%;
 }
 
 .alamatLink:hover {
@@ -457,6 +466,9 @@ body .font-size-9 {
 /* Responsive */
 
 @media screen and (max-width: 460px) {
+    .bg-imgs-2 {
+        background: transparent !important;
+    }
 
     .logo-tut-resp {
         width: 50px;
@@ -492,7 +504,7 @@ body .font-size-9 {
         background-color: #fff;
     }
 
-    .table>:not(caption)>*>* {
+    .tab-desc .table>:not(caption)>*>* {
         padding: .5rem !important;
     }
 
@@ -505,7 +517,7 @@ body .font-size-9 {
         position: relative !important;
         align-items: center;
         border-radius: 1rem !important;
-        width: 175px;
+        width: 160px;
         height: 125px;
         background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
     }
@@ -525,14 +537,18 @@ body .font-size-9 {
         width: 15px;
     }
 
+    .mini-icons-2 {
+        width: 12px;
+    }
+
     .Telpons {
-        left: calc(50% - 23%);
-        top: 10%;
+        left: calc(50% - 26%);
+        top: 17%;
     }
 
     .Alamats {
-        right: calc(50% - 23%);
-        top: 10%;
+        right: calc(50% - 26%);
+        top: 11%;
     }
 
     body .font-size-xs-8 {
@@ -615,6 +631,11 @@ body .font-size-9 {
 }
 
 @media screen and (max-width: 990px) {
+    .btn-login-close-4 {
+        right: 15%;
+        top: -5%;
+    }
+
     .foo-height {
         height: 50px
     }
@@ -878,6 +899,17 @@ body .font-size-9 {
 }
 
 @media only screen and (min-width: 992px) {
+
+    .btn-login-close-3 {
+        right: 15%;
+        top: -23%;
+    }
+
+    body .KalenderBg {
+        background-image: url("image/kalenderDesk.png") !important;
+    }
+
+
     .login-vector-responsive {
         width: 50%;
     }
@@ -888,6 +920,10 @@ body .font-size-9 {
 
     .mini-icons {
         width: 30px;
+    }
+
+    .mini-icons-2 {
+        width: 20px;
     }
 
     .bg-unggul-main {
@@ -1067,5 +1103,9 @@ body .font-size-9 {
 
     .fs-xs-4 {
         font-size: 14px !important;
+    }
+
+    .fs-xs-5 {
+        font-size: 11px !important;
     }
 }

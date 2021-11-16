@@ -29,11 +29,11 @@ html body .card-header .nextMonth {
     cursor: pointer
 }
 
-html body .card-body {
+html body .cals-body {
     background: #D3D3D3;
 }
 
-html body .card-body .days span {
+html body .cals-body .days span {
     background: #939090;
     color: #fff;
     border-radius: 50%;
@@ -44,11 +44,11 @@ html body .card-body .days span {
     cursor: pointer
 }
 
-html body .card-body .days span:hover {
+html body .cals-body .days span:hover {
     background: #019C9C
 }
 
-html body .card-body .dates span {
+html body .cals-body .dates span {
     background: #fff;
     color: #000;
     border-radius: 50%;
@@ -59,18 +59,18 @@ html body .card-body .dates span {
     cursor: pointer
 }
 
-html body .card-body .dates span.active,
-html body .card-body .dates span:hover {
+html body .cals-body .dates span.active,
+html body .cals-body .dates span:hover {
     background: #019C9C;
     color: #fff
 }
 
-html body .card-body .dates span.ntMonth {
+html body .cals-body .dates span.ntMonth {
     color: #f1f1f1;
     background: #7C7B7B
 }
 
-html body .card-body .dates span.ntMonth:hover {
+html body .cals-body .dates span.ntMonth:hover {
     background: #019C9C;
     color: #fff
 }
@@ -80,16 +80,16 @@ html body .card#event .card-header .close {
     opacity: 1
 }
 
-html body .card#event .card-body .events-today {
+html body .card#event .cals-body .events-today {
     height: 210px;
     overflow-x: hidden
 }
 
-html body .card#event .card-body .events-input .data-invalid {
+html body .card#event .cals-body .events-input .data-invalid {
     border-color: red
 }
 
-html body .card#event .card-body .events-input .error {
+html body .card#event .cals-body .events-input .error {
     font-size: 12px;
     color: red;
     position: absolute;
@@ -106,22 +106,38 @@ html body .bg-date-ctive {
 
 @media(max-width: 767px) {
 
-    html body .card-body .days span {
+    html body .cals-body .days span {
         height: 38px;
         width: 38px;
         line-height: 38px;
         font-size: .8rem
     }
 
-    html body .card-body .dates span {
+    html body .cals-body .dates span {
         height: 38px;
         width: 38px;
         line-height: 38px;
         font-size: .8rem
     }
 
-    html body .card#event .card-body .events-today {
+    html body .card#event .cals-body .events-today {
         height: 188px
+    }
+}
+
+@media screen and (max-width: 376px) {
+    html body .cals-body .days span {
+        height: 26px !important;
+        width: 26px !important;
+        line-height: 26px !important;
+        font-size: .6rem
+    }
+
+    html body .cals-body .dates span {
+        height: 26px !important;
+        width: 26px !important;
+        line-height: 26px !important;
+        font-size: .6rem
     }
 }
 

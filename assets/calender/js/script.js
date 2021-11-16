@@ -20,7 +20,7 @@ let year = c_date.getFullYear();
                             <span><strong id="s_m"></strong></span>
                             <span class="nextMonth">&#10097;</span>
                         </div>
-                        <div class="card-body px-1 py-3">
+                        <div class="card-body cals-body px-1 py-3">
                             <div class="table-responsive">
                                 <table class="table table-sm table-borderless">
                                     <thead class="days text-center">
@@ -40,8 +40,8 @@ let year = c_date.getFullYear();
                     <div class="card border-0 flex-fill d-none" id="event">
                         <div class="card-header py-3 text-center">
                             Add Event
-                            <button type="button" class="close hide">
-                                <span aria-hidden="true">&times;</span>
+                            <button type="button" class="close btn-close-cals hide">
+                                <span aria-hidden="true"></span>
                             </button>
                         </div>
                         <div class="card-body px-1 py-3">
@@ -68,8 +68,8 @@ let year = c_date.getFullYear();
                 <div class="toast-header">
                 <strong class="mr-auto">Calendar</strong>
                 <small>Just now</small>
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" class="ml-2 mb-1 close btn-close-cals" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true"></span>
                 </button>
                 </div>
                 <div class="toast-body">
@@ -156,8 +156,8 @@ renderCalendar(month, year)
                     let eventsLi ='';
                     eventsList.forEach(event =>  $('.events-today').html(eventsLi +=`<div class="alert alert-danger alert-dismissible fade show" role="alert">
                     ${event.eventText}
-                    <button type="button" class="close remove-event" data-event-id="${event.id}" data-dismiss="alert" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+                    <button type="button" class="close btn-close-cals remove-event" data-event-id="${event.id}" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true"></span>
                     </button>
                   </div>`));
                 }else{
