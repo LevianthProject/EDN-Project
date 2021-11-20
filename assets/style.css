@@ -47,6 +47,10 @@ body .color-6 {
     color: #707070;
 }
 
+body .color-7 {
+    color: #E8E5E5;
+}
+
 body .bg-1 {
     background-color: #30AB7F !important;
 }
@@ -73,6 +77,10 @@ body .bg-6 {
 
 body .bg-7 {
     background-color: #C1C3C4;
+}
+
+body .bg-8 {
+    background-color: #E7E7E7;
 }
 
 .bg-gradie {
@@ -225,6 +233,11 @@ body .font-size-9 {
     width: 20px;
 }
 
+.mapels-container {
+    width: 160px;
+    height: 110px;
+}
+
 .hr-styled {
     width: 100%;
     height: 3px;
@@ -363,6 +376,14 @@ body .font-size-9 {
     top: 30%;
 }
 
+.raport-height {
+    height: 400px;
+}
+
+.kehadiran-height {
+    height: 480px;
+}
+
 .foo-height {
     height: 60px;
 }
@@ -429,6 +450,10 @@ body .font-size-9 {
     color: rgb(216, 216, 216) !important;
 }
 
+.PHolder-white::placeholder {
+    color: white;
+}
+
 .px-6 {
     padding-right: 8rem !important;
     padding-left: 8rem !important;
@@ -437,6 +462,11 @@ body .font-size-9 {
 .px-7 {
     padding-right: 10rem !important;
     padding-left: 10rem !important;
+}
+
+.lstype-none {
+    list-style-type: none;
+    padding: 0;
 }
 
 /* firefox */
@@ -900,8 +930,19 @@ body .font-size-9 {
 
 @media only screen and (min-width: 992px) {
 
+    .fixed-lg-bottom {
+        position: fixed;
+        bottom: 0 !important;
+    }
+
+    .diveders-materi {
+        width: 100%;
+        height: 1px;
+        background-color: gray;
+    }
+
     .btn-login-close-3 {
-        right: 15%;
+        right: 12%;
         top: -23%;
     }
 
