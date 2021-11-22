@@ -932,6 +932,8 @@ body .font-size-9 {
 
     .fixed-lg-bottom {
         position: fixed;
+        left: 0;
+        right: 0;
         bottom: 0 !important;
     }
 
