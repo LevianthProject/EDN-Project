@@ -260,6 +260,27 @@ body .font-size-9 {
     padding-right: .4rem;
 }
 
+.cards-download {
+    max-width: calc(200px - .1em);
+    height: 130px;
+    flex: 1;
+    background-color: white;
+    padding: 1rem .0rem .6rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cards-img-containers {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: -50px;
+}
+
 .miniButtonIcon {
     position: absolute;
     left: 20px;
@@ -372,11 +393,15 @@ body .font-size-9 {
 }
 
 .z-10 {
-    z-index: 100;
+    z-index: 10;
 }
 
 .top-60 {
     top: 30%;
+}
+
+.rounded-half {
+    border-radius: 1.5rem !important;
 }
 
 .raport-height {
@@ -763,6 +788,21 @@ body .font-size-9 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 95% !important;
+        margin-top: auto;
+        margin-left: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: none;
+        outline: 0;
+    }
+
+    body .KalenderBgMobile {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 65% !important;
         margin-top: auto;
         margin-left: auto;
         position: relative;

@@ -93,7 +93,7 @@
     <!-- End:Menu Mobile -->
 
     <!-- Login Modal-->
-    <div class="modal align-items-center fade" id="loginModal" tabindex="-1" aria-labelledby="loginModals"
+    <div class="modal align-items-center fade overflow-auto" id="loginModal" tabindex="-1" aria-labelledby="loginModals"
         aria-hidden="true">
         <div
             class="modal-dialog LoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
@@ -124,9 +124,10 @@
             </div>
         </div>
     </div>
+    <!-- End: Login Modal -->
     <!-- SignUp -->
-    <div class="modal align-items-center fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModals"
-        aria-hidden="true">
+    <div class="modal align-items-center fade overflow-auto" id="SignUpModal" tabindex="-1"
+        aria-labelledby="SignUpModals" aria-hidden="true">
         <div
             class="modal-dialog LoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
             <div class="w-100 h-100 bg-transparent mx-5 px-5 position-relative">
@@ -168,7 +169,7 @@
     <!-- End:SignUp -->
 
     <!-- LoginSiswa -->
-    <div class="modal align-items-center fade" id="loginSiswa" tabindex="-1" aria-labelledby="loginSiswas"
+    <div class="modal align-items-center fade overflow-auto" id="loginSiswa" tabindex="-1" aria-labelledby="loginSiswas"
         aria-hidden="true">
         <div
             class="modal-dialog LoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
@@ -207,7 +208,7 @@
     <!-- End:LoginSiswa -->
 
     <!-- Login Wali -->
-    <div class="modal align-items-center fade" id="loginWali" tabindex="-1" aria-labelledby="loginWalis"
+    <div class="modal align-items-center fade overflow-auto" id="loginWali" tabindex="-1" aria-labelledby="loginWalis"
         aria-hidden="true">
         <div
             class="modal-dialog LoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
@@ -249,7 +250,7 @@
 
     <!-- PPDB Modal-->
     <!-- Desktop Version -->
-    <div class="modal align-items-center fade" id="PpdbModal" tabindex="-1" aria-labelledby="PPBDmodals"
+    <div class="modal align-items-center fade overflow-auto" id="PpdbModal" tabindex="-1" aria-labelledby="PPBDmodals"
         aria-hidden="true">
         <div
             class="modal-dialog PpdbLoginBg d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
@@ -303,8 +304,8 @@
     </div>
     <!-- End:Desktop Version -->
     <!-- Mobile Version -->
-    <div class="modal align-items-center fade" id="ppdbMobileModals" tabindex="-1" aria-labelledby="ppdbMobileModals"
-        aria-hidden="true">
+    <div class="modal align-items-center fade overflow-auto" id="ppdbMobileModals" tabindex="-1"
+        aria-labelledby="ppdbMobileModals" aria-hidden="true">
         <div
             class="modal-dialog ppdbLoginMobile d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
             <div class="w-100 h-100 bg-transparent mx-5 px-5 position-relative">
@@ -356,8 +357,8 @@
     <!-- End:PPDB Modal -->
 
     <!-- Kalender Modal-->
-    <div class="modal align-items-center fade" id="KalenderModal" tabindex="-1" aria-labelledby="PPBDmodals"
-        aria-hidden="true">
+    <div class="modal align-items-center fade overflow-auto" id="KalenderModal" tabindex="-1"
+        aria-labelledby="PPBDmodals" aria-hidden="true">
         <div
             class="modal-dialog modal-lg KalenderBg KalenderBgMobile d-flex flex-column align-items-center justify-content-center modal-dialog-centered">
             <div
@@ -750,6 +751,27 @@
     </div>
     <!-- End:Maps -->
 
+    <!-- Download Section -->
+    <div class="container-fluid my-lg-4 mt-5 mb-3 d-flex justify-content-center">
+        <div class="cards-download shadow-sm rounded-3">
+            <div class="container px-0">
+                <div class="cards-img-containers">
+                    <div class="w-50 position-absolute z-10">
+                        <img width="100%" src="assets/image/EDNA-logo-color.png" alt="">
+                    </div>
+                    <img width="75%" class="position-relative" src="assets/image/flowers.png" alt="">
+                </div>
+                <div class="card-body d-flex justify-content-center">
+                    <button
+                        class="btn bg-gradie text-white rounded-pill w-100 d-flex align-items-center justify-content-center gap-2">
+                        <img src="assets/icon/downloads.png" width="15%" alt="" draggable="false">
+                        Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End:Download Section -->
 
     <!-- Footer -->
     <footer class="container-fluid mt-lg-3 px-lg-5 py-lg-0 py-2">
@@ -775,7 +797,6 @@
     </footer>
     <!-- End:Footer -->
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
@@ -784,7 +805,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
     <script src="assets/calender/js/script.js"></script>
-
 
     <script>
         $(window).scroll(function () {
