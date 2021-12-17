@@ -16,16 +16,23 @@
     --color-11: #747C89;
     --color-12: #062442;
     --color-13: #B1B1B1;
-    --color-14: #639E30;
+    --color-14: #237F9B;
     --color-15: #707070;
     --color-16: #E8E5E5;
     --color-17: #019c9c;
     --color-18: rgba(0, 0, 0, 0.904);
+    --gradient-1: linear-gradient(270deg, #1EBBB4 -2.03%, #2a557a 100%);
+    --gradient-2: linear-gradient(270deg, #1EBBB4 10%, #316991 90%);
 
-    --gradient-1: linear-gradient(270deg, #1EBBB4 -2.03%, #2A327A 100%);
+
     --jumboImg: url("image/jumbotronImage.png");
     --pplBrandImg: url("image/bPeopleBrand-only.png");
     --imgUnggulMain: url("image/bubble-blue.png");
     --imgUnggul: url("image/imageUnggul-1.jpg");
     --imgGallery: url("image/bubble-blue-2.png");
+    --loginVectors: url("image/loginImage-blue.png");
+    --kalenderBg: url("image/kalenderDesk-blue.png");
+    --ppdbLoginImg: url("image/ppdbLoginImg-blue.png");
+    --bg-imgs-1: url("image/bg-bubble-blues.png");
+    --bg-imgs-2: url("image/bg-bubble-blues.png") no-repeat scroll 120% 10%, url("image/bg-ppls-blue.png") no-repeat scroll left 10%;
 }
