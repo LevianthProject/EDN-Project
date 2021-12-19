@@ -42,8 +42,11 @@
     --loginVectors: url("image/loginImage.png");
     --kalenderBg: url("image/kalenderDesk.png");
     --ppdbLoginImg: url("image/ppdbLoginImg.png");
+    --ppdbLoginImg-2: url("image/ppdbLoginMobile.png");
     --bg-imgs-1: url("image/bg-bubble-1.png");
     --bg-imgs-2: url("image/bg-bubble-1.png") no-repeat scroll 120% 10%, url("image/bg-ppls.png") no-repeat scroll left 50%;
+    --iconMapsThemes: url("image/iconMapHijau.png");
+    --allMapsThemes: url("image/allMapHijau.png");
 }
 
 
@@ -194,6 +197,16 @@ body .peopleBrandImg {
     height: 360px;
 }
 
+body .ppdbPeoples {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: var(--pplBrandImg) no-repeat;
+    background-size: 100%;
+    width: 60%;
+    height: 180px;
+}
+
 body .imgUnggul {
     display: block;
     -moz-box-sizing: border-box;
@@ -220,6 +233,22 @@ body .loginVectors {
     background: var(--loginVectors) no-repeat;
     background-size: 100%;
     height: 120px;
+}
+
+body .allMapsThemes {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: var(--allMapsThemes) no-repeat;
+    background-size: 100%;
+}
+
+body .iconMapsThemes {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: var(--iconMapsThemes) no-repeat;
+    background-size: 100%;
 }
 
 body .LoginBg {
@@ -659,6 +688,16 @@ body .font-size-9 {
 
 @media screen and (max-width: 460px) {
 
+    .all-maps-responsive {
+        width: 100%;
+        height: 180px;
+    }
+
+    .maps-icon-responsive {
+        height: 55px;
+        width: 10%;
+    }
+
     .toast {
         z-index: 10 !important;
     }
@@ -917,7 +956,7 @@ body .font-size-9 {
     }
 
     body .ppdbLoginMobile {
-        background-image: url("image/ppdbLoginMobile.png") !important;
+        background-image: var(--ppdbLoginImg-2) !important;
     }
 
     body .KalenderBgMobile {
@@ -1022,14 +1061,6 @@ body .font-size-9 {
     .maps-responsive {
         width: 100%;
         height: 30%;
-    }
-
-    .all-maps-responsive {
-        width: 100%;
-    }
-
-    .maps-icon-responsive {
-        width: 10%;
     }
 
     body .gallery-wrapper {
@@ -1379,11 +1410,25 @@ body .font-size-9 {
     }
 
     .all-maps-responsive {
-        width: 43%;
+        width: 45% !important;
+        height: 130px !important;
     }
 
     .maps-icon-responsive {
-        width: 5%;
+        height: 50px !important;
+        width: 9% !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .all-maps-responsive {
+        width: 80%;
+        height: 250px;
+    }
+
+    .maps-icon-responsive {
+        height: 65px;
+        width: 6%;
     }
 }
 

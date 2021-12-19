@@ -33,6 +33,29 @@
     --loginVectors: url("image/loginImage-blue.png");
     --kalenderBg: url("image/kalenderDesk-blue.png");
     --ppdbLoginImg: url("image/ppdbLoginImg-blue.png");
+    --ppdbLoginImg-2: url("image/ppdbLoginMobileBlue.png");
     --bg-imgs-1: url("image/bg-bubble-blues.png");
     --bg-imgs-2: url("image/bg-bubble-blues.png") no-repeat scroll 120% 10%, url("image/bg-ppls-blue.png") no-repeat scroll left 10%;
+    --iconMapsThemes: url("image/iconMapBiru.png");
+    --allMapsThemes: url("image/allMapBiru.png");
+}
+
+@media screen and (min-width: 992px) {
+    body .loginVector {
+        height: 165px;
+    }
+
+    body .loginVectors {
+        height: 140px;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    body .loginVector {
+        height: 85px;
+    }
+
+    body .loginVectors {
+        height: 70px;
+    }
 }
