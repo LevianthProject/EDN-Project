@@ -37,7 +37,6 @@
     --jumboImg: url("image/jumbotronImage.svg");
     --pplBrandImg: url("image/peopleBrand-only.png");
     --imgUnggulMain: url("image/bg-bubble.svg");
-    --imgUnggul: url("image/imageUnggul-1.jpg");
     --imgGallery: url("image/bg-bubble-2.svg");
     --loginVectors: url("image/loginImage.png");
     --kalenderBg: url("image/kalenderDesk.png");
@@ -206,15 +205,6 @@ body .ppdbPeoples {
     background-size: 100%;
     width: 60%;
     height: 180px;
-}
-
-body .imgUnggul {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: var(--imgUnggul) no-repeat;
-    background-size: 100%;
-    height: 150px;
 }
 
 body .loginVector {
@@ -645,6 +635,23 @@ body .font-size-9 {
 .Alamats {
     right: calc(50% - 16%);
     top: 20%;
+}
+
+.cards-unggul {
+    object-fit: contain;
+    width: 280px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.unggulImages {
+    height: 100%;
+    width: 100%;
+    padding: .35rem;
 }
 
 .alamatLink:hover {
