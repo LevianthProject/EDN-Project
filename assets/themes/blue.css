@@ -38,19 +38,43 @@
     --bg-imgs-2: url("image/bg-bubble-blues.png") no-repeat scroll 120% 10%, url("image/bg-ppls-blue.png") no-repeat scroll left 10%;
     --iconMapsThemes: url("image/iconMapBiru.png");
     --allMapsThemes: url("image/allMapBiru.png");
+    --galleryIcons: url("icon/gallery_topIcon_blue.png")
 }
 
-@media screen and (min-width: 992px) {
+
+@media screen and (max-width: 992px) {
     body .loginVector {
-        height: 165px;
+        height: 130px;
     }
 
     body .loginVectors {
-        height: 140px;
+        height: 125px;
     }
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 425px) {
+    body .loginVector {
+        height: 105px;
+    }
+
+    body .loginVectors {
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body .loginVector {
+        height: 75px;
+    }
+
+    body .loginVectors {
+        height: 55px;
+    }
+}
+
+/* 
+
+@media screen and (max-width: 992px) {
     body .loginVector {
         height: 85px;
     }
@@ -58,4 +82,4 @@
     body .loginVectors {
         height: 70px;
     }
-}
+} */

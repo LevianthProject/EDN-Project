@@ -47,6 +47,7 @@
     --bg-imgs-2: url("image/bg-bubble-1.png") no-repeat scroll 120% 10%, url("image/bg-ppls.png") no-repeat scroll left 50%;
     --iconMapsThemes: url("image/iconMapHijau.png");
     --allMapsThemes: url("image/allMapHijau.png");
+    --galleryIcons: url("icon/gallery_topIcon_green.png")
 }
 
 
@@ -58,12 +59,12 @@
 /* Start Themes */
 
 .choose-color {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 50px;
-    height: 15px;
-    width: 15px;
+    border-radius: 2px;
+    height: 20px;
+    width: 20px;
     margin: 0px 5px 0px 5px;
     cursor: pointer;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .4) !important;
 }
 
 .choose-color:hover {
@@ -249,6 +250,15 @@ body .iconMapsThemes {
     box-sizing: border-box;
     background: var(--iconMapsThemes) no-repeat;
     background-size: 100%;
+}
+
+body .galleryIcons {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: var(--galleryIcons) no-repeat;
+    background-size: 100%;
+    height: 80px;
 }
 
 body .LoginBg {
@@ -999,14 +1009,14 @@ body .font-size-9 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url("image/bg-bubble.svg");
+        background-image: var(--imgUnggulMain);
     }
 
     .bg-unggul-cards-2 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 75%;
-        background-image: url("image/bg-bubble.svg");
+        background-image: var(--imgUnggulMain);
     }
 
     .font-size-sm-1 {
