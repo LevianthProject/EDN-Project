@@ -886,6 +886,30 @@ body .font-size-9 {
         height: 125px;
         background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
     }
+
+    .nav-mobsize-1 {
+        width: 28px !important;
+    }
+
+    .nav-mobsize-2 {
+        width: 33px !important;
+    }
+
+    .nav-mobsize-3 {
+        width: 19px !important;
+    }
+
+    .nav-mobsize-4 {
+        width: 28px !important;
+    }
+
+    .nav-mobsize-5 {
+        width: 19px !important;
+    }
+
+    .nav-mobsize-6 {
+        width: 36px !important;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -903,6 +927,30 @@ body .font-size-9 {
 
     .foo-height {
         height: 50px
+    }
+
+    .nav-mobsize-1 {
+        width: 34px;
+    }
+
+    .nav-mobsize-2 {
+        width: 39px;
+    }
+
+    .nav-mobsize-3 {
+        width: 25px;
+    }
+
+    .nav-mobsize-4 {
+        width: 34px;
+    }
+
+    .nav-mobsize-5 {
+        width: 25px;
+    }
+
+    .nav-mobsize-6 {
+        width: 42px;
     }
 
     .login-vector-responsive {
