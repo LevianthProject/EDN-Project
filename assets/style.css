@@ -776,7 +776,7 @@ body .font-size-9 {
         border-radius: 1rem !important;
         width: 160px;
         height: 125px;
-        background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
+        background: var(--gradient-2);
     }
 
     .cards-tabs {
@@ -884,7 +884,7 @@ body .font-size-9 {
         border-radius: 1rem !important;
         width: 120px;
         height: 125px;
-        background: linear-gradient(180deg, #13A08F 0%, #29A781 100%);
+        background: var(--gradient-2);
     }
 
     .nav-mobsize-1 {
